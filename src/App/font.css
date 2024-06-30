@@ -1,0 +1,40 @@
+ @font-face {
+    font-family: 'YekanBakhMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../public/font/yekanBakh/eot/YekanBakhFaNum-Medium.eot');
+    src: url('../public/fonts/yekanBakh/eot/YekanBakhFaNum-Medium.eot?#iefix')
+    format('embedded-opentype'),
+    url('../public/fonts/yekanBakh/woff2/YekanBakhFaNum-Medium.woff2') format('woff2'),
+    url('../public/fonts/yekanBakh/woff/YekanBakhFaNum-Medium.woff') format('woff'),
+    url('../public/fonts/yekanBakh/ttf/YekanBakhFaNum-Medium.ttf') format('truetype');
+    font-display: fallback;
+  } 
+
+  @font-face {
+    font-family: 'YekanBakhbold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../public/fonts/yekanBakh/eot/YekanBakhFaNum-Bold.eot');
+    src: url('../public/fonts/yekanBakh/eot/YekanBakhFaNum-Bold.eot?#iefix')
+    format('embedded-opentype'),
+    url('../public/fonts/yekanBakh/woff2/YekanBakhFaNum-Bold.woff2') format('woff2'),
+    url('../public/fonts/yekanBakh/woff/YekanBakhFaNum-Bold.woff') format('woff'),
+    url('../public/fonts/yekanBakh/ttf/YekanBakhFaNum-Bold.ttf') format('truetype');
+    font-display: fallback;
+  } 
+
+@font-face {
+    font-family: 'YekanBakhheavy';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../public/fonts/yekanBakh/eot/YekanBakhFaNum-Heavy.eot');
+    src: url('../public/fonts/yekanBakh/eot/YekanBakhFaNum-Heavy.eot?#iefix')
+    format('embedded-opentype'),
+    url('../public/fonts/yekanBakh/woff2/YekanBakhFaNum-Heavy.woff2') format('woff2'),
+    url('../public/fonts/yekanBakh/woff/YekanBakhFaNum-Heavy.woff') format('woff'),
+    url('../public/fonts/yekanBakh/ttf/YekanBakhFaNum-Heavy.ttf') format('truetype');
+    font-display: fallback;
+  }
+
+
