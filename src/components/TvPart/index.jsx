@@ -1,5 +1,5 @@
 import React from "react";
-import DownloadButton from "../MainPart/DownloadButton";
+import DownloadButton from "../MainPart/components/DownloadButton";
 import {
   LeftPart,
   Img,

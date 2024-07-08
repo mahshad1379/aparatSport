@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LeftPart = styled.div`
   width: 100%;
-  height: 614px;
+  height: 100%;
   position: absolute;
 
   @media (max-width: 500px) {
@@ -14,6 +14,8 @@ export const LeftPart = styled.div`
 export const ImgContainer = styled.div`
   height: 100%;
   position: relative;
+  display: flex;
+  overflow: hidden;
 
   @media (max-width: 500px) {
   }
@@ -21,15 +23,18 @@ export const ImgContainer = styled.div`
 
 export const Img = styled.img`
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
 
   @media (max-width: 500px) {
+    transform: scale(1.3);
+    left: 80px;
+    height: 100%;
   }
 `;
 
 export const GreenButton = styled.button`
-  width: 422.22px;
+  width: 100%;
   height: 56px;
   padding: 16px;
   border-radius: 8px;
@@ -63,7 +68,7 @@ export const RightPart = styled.div`
   display: flex;
   justify-content: center;
   width: 614.22px;
-  height: 614px;
+  height: 100%;
   padding: 96px 0px 0px 0px;
   gap: 96px;
   position: absolute;
