@@ -11,10 +11,21 @@ import {
   Profile,
   ProfileText,
 } from "./styles";
+import { useState } from "react";
 
 const Header = () => {
+  const [color, setColor] = useState(false);
+
+  const ChangeColor = () => {
+    if (window.scrollY >= 42) {
+      setColor(true);
+    } else setColor(false);
+  };
+
+  window.addEventListener("scroll", ChangeColor);
+
   return (
-    <HeaderStyle>
+    <HeaderStyle color={color}>
       <RightPart>
         <svg
           width="129"

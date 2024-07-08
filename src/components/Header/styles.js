@@ -5,17 +5,16 @@ export const HeaderStyle = styled.div`
   z-index: 1;
   display: flex;
   flex-direction: row;
-  width: 1440px;
-  height: 64px;
+  max-width: 1440px;
+  width: 100%;
+  height: 42;
   padding: 12px 64px 12px 64px;
   border: 1px;
   justify-content: space-between;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-
-  @media (max-width: 500px) {
-    width: 360px;
-    height: 56px;
-  }
+  background: ${(props) =>
+    props.color
+      ? "#000000"
+      : "linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)"};
 `;
 
 export const RightPart = styled.div``;
