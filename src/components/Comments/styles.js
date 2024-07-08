@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CommentStyle = styled.div`
   padding: 0px 96px 0px 96px;
   margin-bottom: 70px;
-  
+
   @media (max-width: 500px) {
     padding: 0px;
   }
@@ -70,13 +70,13 @@ export const ArrowBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const CommentDownside = styled.div`
+  position: relative;
   display: flex;
   flex-direction: row;
-  // width: 1248px;
-  // height: 248px;
   justify-content: start;
   gap: 16px;
   overflow: scroll hidden;

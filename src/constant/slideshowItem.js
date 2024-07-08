@@ -1,16 +1,76 @@
 const SLIDE_ITEM = [
-    "/img/slider/black/Bundesliga@2x.png",
-    "/img/slider/black/Champions League@2x.png",
-    "/img/slider/black/Eredivisie@2x 2.png",
-    "/img/slider/black/Europa Conference League@2x.png",
-    "/img/slider/black/Europa League@2x.png",
-    "/img/slider/black/FIBA@2x.png",
-    "/img/slider/black/FIVB@2x.png",
-    "/img/slider/black/Formula 1@2x.png",
-    "/img/slider/black/La Liga@2x.png",
-    "/img/slider/black/League1@2x.png",
-    "/img/slider/black/NBA@2x.png",
-    "/img/slider/black/Premier League@2x.png",
-    "/img/slider/black/SerieA@2x.png",
-    "/img/slider/black/US Open@2x.png"
-]
+  {
+    id: 0,
+    grayImg: "/img/slider/black/US Open@2x.png",
+    coloredImg:"/img/slider/colored/US Open@2x.png",
+  },
+  {
+    id: 1,
+    grayImg: "/img/slider/black/Bundesliga@2x.png",
+    coloredImg:"/img/slider/colored/Bundesliga@2x.png",
+  },
+  {
+    id: 2,
+    grayImg: "/img/slider/black/Champions League@2x.png",
+    coloredImg:"/img/slider/colored/Champions League@2x.png",
+  },
+  {
+    id: 3,
+    grayImg: "/img/slider/black/Eredivisie@2x 2.png",
+    coloredImg:"/img/slider/colored/Eredivisie@2x 2.png",
+  },
+  {
+    id: 4,
+    grayImg: "/img/slider/black/Europa Conference League@2x.png",
+    coloredImg:"/img/slider/colored/Europa Conference League@2x.png",
+  },
+  {
+    id: 5,
+    grayImg: "/img/slider/black/Europa League@2x.png",
+    coloredImg:"/img/slider/colored/Europa League@2x.png",
+  },
+
+  {
+    id: 6,
+    grayImg: "/img/slider/black/FIBA@2x.png",
+    coloredImg:"/img/slider/colored/FIBA@2x.png",
+  },
+  {
+    id: 7,
+    grayImg: "/img/slider/black/FIVB@2x.png",
+    coloredImg:"/img/slider/colored/FIVB@2x.png",
+  },
+  {
+    id: 8,
+    grayImg: "/img/slider/black/Formula 1@2x.png",
+    coloredImg:"/img/slider/colored/Formula 1@2x.png",
+  },
+  {
+    id: 9,
+    grayImg: "/img/slider/black/La Liga@2x.png",
+    coloredImg:"/img/slider/colored/La Liga@2x.png",
+  },
+
+  {
+    id: 10,
+    grayImg: "/img/slider/black/League1@2x.png",
+    coloredImg:"/img/slider/colored/League1@2x.png",
+  },
+  {
+    id: 11,
+    grayImg: "/img/slider/black/NBA@2x.png",
+    coloredImg:"/img/slider/colored/NBA@2x.png",
+  },
+  {
+    id: 12,
+    grayImg: "/img/slider/black/Premier League@2x.png",
+    coloredImg:"/img/slider/colored/Premier League@2x.png",
+  },
+  {
+    id: 13,
+    grayImg: "/img/slider/black/SerieA@2x.png",
+    coloredImg:"/img/slider/colored/SerieA@2x.png",
+  },
+];
+
+export default Object.freeze(SLIDE_ITEM);

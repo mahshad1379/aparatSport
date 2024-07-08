@@ -1,6 +1,7 @@
 const DOWNLOAD_ITEM = [
   {
     id: 0,
+    status: true,
     text: "دریافت اپلیکیشن اندروید",
     logo: (
       <svg
@@ -19,6 +20,7 @@ const DOWNLOAD_ITEM = [
   },
   {
     id: 1,
+    status: false,
     text: "دریافت اپلیکیشن ios",
     logo: (
       <svg
@@ -37,6 +39,7 @@ const DOWNLOAD_ITEM = [
   },
   {
     id: 2,
+    status: false,
     text: "دریافت وب اپلیکیشن",
     logo: (
       <svg

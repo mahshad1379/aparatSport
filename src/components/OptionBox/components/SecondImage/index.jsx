@@ -5,7 +5,7 @@ import {
   OptionBoxContent,
   OptionBoxHeader,
   OptionBoxText,
-} from "../styles.js";
+} from "../../styles.js";
 
 const SecondImage = () => {
   return (

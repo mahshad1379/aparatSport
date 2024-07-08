@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import COMMENT_ITEM from "../../constant/commentItem";
-import CommentsBox from "./CommentsBox";
-import RateBox from "./RateBox";
+import CommentsBox from "./components/CommentsBox";
+import RateBox from "./components/RateBox";
 
 import {
   CommentStyle,
@@ -15,6 +15,16 @@ import {
 } from "./styles.js";
 
 const Comments = () => {
+  const [scrollPos, setScrollPos] = useState(0);
+  const containerRef = useRef();
+  const ITEM_WIDTH = 400;
+
+  const HandleScroll = (scrollAmount) => {
+    const newScrollPos = scrollPos + scrollAmount;
+    setScrollPos(newScrollPos);
+    containerRef.current.scrollLeft = newScrollPos;
+  };
+
   return (
     <CommentStyle>
       <CommentUpside>
@@ -26,7 +36,12 @@ const Comments = () => {
           </CommentRateBox>
         </CommentContent>
         <CommentArrow>
-          <ArrowBox>
+          <ArrowBox
+            onClick={() => {
+              HandleScroll(ITEM_WIDTH);
+            }}
+          >
+            {console.log(scrollPos)}
             <svg
               width="24"
               height="24"
@@ -42,7 +57,11 @@ const Comments = () => {
               />
             </svg>
           </ArrowBox>
-          <ArrowBox>
+          <ArrowBox
+            onClick={() => {
+              HandleScroll(-ITEM_WIDTH);
+            }}
+          >
             <svg
               width="24"
               height="24"
@@ -60,7 +79,7 @@ const Comments = () => {
           </ArrowBox>
         </CommentArrow>
       </CommentUpside>
-      <CommentDownside>
+      <CommentDownside ref={containerRef}>
         {COMMENT_ITEM.map((item) => {
           return (
             <CommentsBox

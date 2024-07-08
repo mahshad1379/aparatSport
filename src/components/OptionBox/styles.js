@@ -67,7 +67,7 @@ export const OptionPartStyle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 16px 0;
+  margin: 40px 0;
   gap: 16px;
   @media (max-width: 500px) {
     justify-content: start;
