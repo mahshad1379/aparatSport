@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   position: relative;
-  background-color: #11121a;
 `;
 
 export const AparatSportLogo = styled.img`
