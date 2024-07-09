@@ -1,12 +1,9 @@
+@import './config/font.css';
+
 body {
   margin: 0;
-  font: 500 14px 'yekan bakh';
+  font: 500 14px 'yekanBakh-medium';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #11121a;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

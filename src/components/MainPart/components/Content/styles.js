@@ -49,10 +49,7 @@ export const ContentHeader = styled.div`
 `;
 
 export const ContentText = styled.div`
-  font-family: YekanBakhheavy;
-  font-size: 28px;
-  // font-weight: 600;
-  line-height: 48px;
+  font: 800 24px 'yekanBakh-medium';
   text-align: right;
   color: #ffffff;
 
