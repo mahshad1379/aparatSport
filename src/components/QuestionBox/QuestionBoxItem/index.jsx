@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Arrow from "../../../Arrow";
-import { ARROW_UP, ARROW_DOWN } from "../../../../constant/arrow.js";
+import Arrow from "../../Arrow";
+import { ARROW_UP, ARROW_DOWN } from "../../../constant/arrow.js";
 import {
   QuestionBoxItemStyle,
   QuestionBoxUpside,

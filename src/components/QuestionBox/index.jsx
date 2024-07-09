@@ -1,6 +1,6 @@
 import React from "react";
 import QUESTION_ITEM from "../../constant/questionItem";
-import QuestionBoxItem from "./components/QuestionBoxItem";
+import QuestionBoxItem from "./QuestionBoxItem";
 import {
   QuestionPartContainer,
   QuestionPartContent,
