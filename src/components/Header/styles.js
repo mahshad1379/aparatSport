@@ -3,18 +3,19 @@ import styled from "styled-components";
 export const HeaderStyle = styled.div`
   position: fixed;
   z-index: 1;
-  display: flex;
-  flex-direction: row;
-  max-width: 1440px;
   width: 100%;
-  height: 42;
-  padding: 12px 64px 12px 64px;
   border: 1px;
-  justify-content: space-between;
   background: ${(props) =>
     props.color
       ? "#000000"
       : "linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)"};
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const RightPart = styled.div``;
@@ -23,8 +24,6 @@ export const LeftPart = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 557px;
-  height: 40px;
   gap: 32px;
 `;
 export const Profile = styled.div`
@@ -61,7 +60,6 @@ export const Menu = styled.div`
 
 export const MenuItem = styled.div`
   display: block;
-  width: 83px;
   height: 16px;
   font-family: YekanBakhbold;
   font-size: 12px;
