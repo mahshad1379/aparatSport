@@ -14,9 +14,9 @@ const ThirdImage = () => {
         <OptionBoxHeader>امکان چت حین تماشای بازی</OptionBoxHeader>
         <OptionBoxText>چت با هواداران تیم‌ها حین تماشای پخش زنده</OptionBoxText>
       </OptionBoxContent>
-      <MainImage src="/img/option/Chat-Mobile.png" />
-      <ButtonImage src="/img/option/Chat Elements.png" />
-      <TopImage src="/img/option/Heart.png" />
+      <MainImage src="/assets/img/option/Chat-Mobile.png" />
+      <ButtonImage src="/assets/img/option/Chat Elements.png" />
+      <TopImage src="/assets/img/option/Heart.png" />
     </OptionBoxStyle>
   );
 };

@@ -14,9 +14,9 @@ const FirstImage = () => {
         <OptionBoxHeader>امکان انتخاب گزارشگر</OptionBoxHeader>
         <OptionBoxText>گزارشگر فارسی، انگلیسی، عربی و ...</OptionBoxText>
       </OptionBoxContent>
-      <MainImage src="/img/option/Commentator-Mobile.png" />
-      <ButtonImage src="/img/option/Commentator Element.png" />
-      <TopImage src="/img/option/Mic.png" />
+      <MainImage src="/assets/img/option/Commentator-Mobile.png" />
+      <ButtonImage src="/assets/img/option/Commentator Element.png" />
+      <TopImage src="/assets/img/option/Mic.png" />
     </OptionBoxStyle>
   );
 };

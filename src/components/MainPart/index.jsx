@@ -8,7 +8,7 @@ const MainPart = () => {
     <>
       <MainPartStyle>
         <Content />
-        <Img src="/img/main-page/Devices.png" alt="sport" />
+        <Img src="/assets/img/main-page/Devices.png" alt="sport" />
       </MainPartStyle>
       <Slideshow />
     </>

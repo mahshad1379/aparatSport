@@ -20,7 +20,7 @@ const TVPart = () => {
     <TvPart>
       <LeftPart>
         <ImgContainer>
-          <Img src="/img/tv-part/TV-BG.png" alt="" />
+          <Img src="/assets/img/tv-part/TV-BG.png" alt="" />
         </ImgContainer>
       </LeftPart>
       <RightPart>

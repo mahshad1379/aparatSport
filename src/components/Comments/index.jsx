@@ -31,8 +31,8 @@ const Comments = () => {
         <CommentContent>
           <CommentContentText>نظر کاربران آپارات اسپرت</CommentContentText>
           <CommentRateBox>
-            <RateBox logo={"/img/comments/Baazar logo.png"} point={4.6} />
-            <RateBox logo={"/img/comments/Myket Logo.png"} point={4.7} />
+            <RateBox logo={"/assets/img/comments/Baazar logo.png"} point={4.6} />
+            <RateBox logo={"/assets/img/comments/Myket Logo.png"} point={4.7} />
           </CommentRateBox>
         </CommentContent>
         <CommentArrow>

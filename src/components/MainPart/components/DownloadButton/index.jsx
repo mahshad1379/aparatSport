@@ -66,11 +66,11 @@ const DownloadButton = ({ show }) => {
       <Button>
         <img
           className="bazarLogo"
-          src="/img/main-page/Cafe_Bazaar_logo 2.png"
+          src="/assets/img/main-page/Cafe_Bazaar_logo 2.png"
           alt="bazar"
         />
         <ButtonText>دریافت از </ButtonText>
-        <BazarText src="/img/main-page/Cafe_Bazaar_logo1 2.png" alt="bazar" />
+        <BazarText src="/assets/img/main-page/Cafe_Bazaar_logo1 2.png" alt="bazar" />
       </Button>
     </ButtonContainer>
   );

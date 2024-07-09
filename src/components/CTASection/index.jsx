@@ -15,9 +15,9 @@ import {
 const CTASection = () => {
   return (
     <Container>
-      <Image src="/img/CTA-section/Sport Players (1).png" alt="CTA" />
+      <Image src="/assets/img/CTA-section/Sport Players (1).png" alt="CTA" />
       <AparatSportLogo
-        src="/img/CTA-section/App icon (1) 1.png"
+        src="/assets/img/CTA-section/App icon (1) 1.png"
         alt="aparat sport logo"
       />
       <ContentBox>

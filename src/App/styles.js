@@ -7,7 +7,7 @@ export const AppStyle = styled.div`
 `;
 
 export const UpSide = styled.div`
-  background-image: url("../../public/img/background/Top-BG\ 1.png");
+  background-image: url("/assets/img/background/Top-BG\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
 `;
