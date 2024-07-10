@@ -8,12 +8,12 @@ export const DownloadBoxStyle = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  padding-top: 40px;
 `;
 
 export const Info = styled.div`
   font-family: YekanBakhMedium;
   font-size: 14px;
-  // font-weight: 325;
   line-height: 24px;
   text-align: right;
   color: #a4a6bc;
@@ -24,7 +24,10 @@ export const Info = styled.div`
   }
 `;
 export const Container = styled.div`
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin 40px;
 `;
 export const ContentContainer = styled.div`
   margin-bottom: 16px;
@@ -37,7 +40,6 @@ export const ContentStyle = styled.div`
 export const ContentHeader = styled.div`
   font-family: YekanBakhMedium;
   font-size: 14px;
-  // font-weight: 325;
   line-height: 16px;
   text-align: right;
   color: #64ff00;

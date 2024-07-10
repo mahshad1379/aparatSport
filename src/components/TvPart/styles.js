@@ -58,6 +58,7 @@ export const GreenButtonText = styled.div`
 `;
 
 export const TvPart = styled.div`
+  margin-top: 40px;
   position: relative;
   height: 614px;
 
