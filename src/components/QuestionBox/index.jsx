@@ -2,6 +2,7 @@ import React from "react";
 import QUESTION_ITEM from "../../constant/questionItem";
 import QuestionBoxItem from "./components/QuestionBoxItem";
 import {
+  MainContainer,
   QuestionPartContainer,
   QuestionPartContent,
   QuestionPartHeader,
@@ -11,19 +12,21 @@ import {
 
 const QuestionBox = () => {
   return (
-    <QuestionPartContainer>
-      <QuestionPartContent>
-        <QuestionPartHeader>سوالات متداول</QuestionPartHeader>
-        <QuestionPartText>
-          سوال شایع دیگر کاربران، شاید برای شما هم پیش آمده باشد
-        </QuestionPartText>
-      </QuestionPartContent>
-      <QuestionBoxContainer>
-        {QUESTION_ITEM.map((item) => (
-          <QuestionBoxItem answer={item.answer} question={item.question} />
-        ))}
-      </QuestionBoxContainer>
-    </QuestionPartContainer>
+    <MainContainer>
+      <QuestionPartContainer>
+        <QuestionPartContent>
+          <QuestionPartHeader>سوالات متداول</QuestionPartHeader>
+          <QuestionPartText>
+            سوال شایع دیگر کاربران، شاید برای شما هم پیش آمده باشد
+          </QuestionPartText>
+        </QuestionPartContent>
+        <QuestionBoxContainer>
+          {QUESTION_ITEM.map((item) => (
+            <QuestionBoxItem answer={item.answer} question={item.question} />
+          ))}
+        </QuestionBoxContainer>
+      </QuestionPartContainer>
+    </MainContainer>
   );
 };
 

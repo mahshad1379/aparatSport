@@ -9,8 +9,8 @@ export const QuestionBoxItemStyle = styled.div`
   width: 792px;
   margin-bottom: 16px;
 
-  @media (max-width: 500px) {
-    width: 328px;
+  @media (max-width: 360px) {
+    width: 100%;
   }
 `;
 
@@ -22,12 +22,11 @@ export const QuestionBoxUpside = styled.div`
 export const QuestionBoxUpsideText = styled.div`
   font-family: YekanBakhheavy;
   font-size: 16px;
-  // font-weight: 600;
   line-height: 24px;
   text-align: right;
   color: #78c248;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 12px;
   }
 `;
@@ -41,12 +40,11 @@ export const QuestionBoxDownSide = styled.div`
 export const QuestionBoxDownSideText = styled.div`
   font-family: YekanBakhMedium;
   font-size: 14px;
-  // font-weight: 325;
   line-height: 24px;
   text-align: right;
   color: #e7e9f2;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 12px;
   }
 `;
