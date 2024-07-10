@@ -1,5 +1,4 @@
 import React from "react";
-import DownloadButton from "../MainPart/components/DownloadButton";
 import {
   LeftPart,
   Img,
@@ -11,9 +10,12 @@ import {
   Content,
   UpsideContent,
   DownSideContent,
+  OptionDownloadBox,
   UpsideContentHeader,
   UpsideContentText,
 } from "./styles.js";
+import AndroidButton from "../Button/components/AndroidButton";
+import BazarButton from "../Button/components/BazarButton";
 
 const TVPart = () => {
   return (
@@ -39,7 +41,10 @@ const TVPart = () => {
             <GreenButton>
               <GreenButtonText>دریافت مستقیم</GreenButtonText>
             </GreenButton>
-            <DownloadButton show={true} />
+            <OptionDownloadBox>
+              <AndroidButton/>
+              <BazarButton/>
+            </OptionDownloadBox>
           </DownSideContent>
         </Content>
       </RightPart>
