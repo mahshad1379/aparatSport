@@ -7,7 +7,7 @@ export const MainPartStyle = styled.div`
   padding: 100px 96px 0px 96px;
   justify-content: space-between;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     flex-direction: column;
   }
 `;
@@ -21,7 +21,7 @@ export const Img = styled.img`
   padding: 100px 96px 0px 96px;
   justify-content: space-between;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 312px;
     height: 306px;
     padding: 0;

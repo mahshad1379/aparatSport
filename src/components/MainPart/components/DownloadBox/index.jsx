@@ -6,7 +6,7 @@ import {
   DownloadBoxTitleLogo,
   DownloadBoxTitleText,
 } from "./styes.js";
-import DownloadButton from "../DownloadButton";
+import DownloadButton from "../DownloadButton/index.jsx";
 import Arrow from "../../../Arrow";
 import { ARROW_UP, ARROW_DOWN } from "../../../../constant/arrow.js";
 

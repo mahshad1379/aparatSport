@@ -18,7 +18,7 @@ export const Info = styled.div`
   text-align: right;
   color: #a4a6bc;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     text-align: center;
     font-size: 12px;
   }
@@ -42,7 +42,7 @@ export const ContentHeader = styled.div`
   text-align: right;
   color: #64ff00;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     text-align: center;
     font-size: 11px;
   }
@@ -56,7 +56,7 @@ export const ContentText = styled.div`
   text-align: right;
   color: #ffffff;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     text-align: center;
     font-size: 18px;
   }

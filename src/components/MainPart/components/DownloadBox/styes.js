@@ -20,7 +20,7 @@ export const DownloadBoxItem = styled.div`
   border-radius: 8px;
   border: 2px solid #282a37;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 328px;
   }
 `;
