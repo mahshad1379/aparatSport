@@ -11,7 +11,7 @@ export const OptionBoxStyle = styled.div`
   border: 1px solid;
   overflow: hidden;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 300px;
     margin-bottom: 16px;
     flex-shrink: 0;
@@ -27,7 +27,7 @@ export const OptionBoxContent = styled.div`
   justify-content: center;
   top: 56px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 163px;
     height: 48px;
     top: 24px;
@@ -45,7 +45,7 @@ export const OptionBoxHeader = styled.h3`
   text-align: center;
   margin: 0;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 16px;
   }
 `;
@@ -58,7 +58,7 @@ export const OptionBoxText = styled.div`
   color: #a4a6bc;
   text-align: center;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 11px;
   }
 `;
@@ -69,7 +69,7 @@ export const OptionPartStyle = styled.div`
   justify-content: center;
   margin: 40px 0;
   gap: 16px;
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     justify-content: start;
     flex-wrap: nowrap;
     overflow: scroll hidden;

@@ -5,7 +5,7 @@ export const MainImage = styled.img`
   top: 152px;
   left: 40px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 214px;
     height: 370px;
     top: 96px;
@@ -17,7 +17,7 @@ export const ButtonImage = styled.img`
   top: 494px;
   left: 134px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     top: 332px;
     left: auto;
   }
@@ -28,7 +28,7 @@ export const TopImage = styled.img`
   top: 193.08px;
   left: 17px;
   
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     top: 164.09px;
     left: 12px;
   }
