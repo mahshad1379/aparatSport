@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const CommentStyle = styled.div`
   padding: 0px 96px 0px 96px;
-  margin-bottom: 70px;
+  margin-top: 70px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     padding: 0px;
   }
 `;
@@ -22,7 +22,7 @@ export const CommentContent = styled.div`
   flex-direction: row;
   gap: 24px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     flex-direction: column;
     align-items: center;
   }
@@ -38,7 +38,7 @@ export const CommentContentText = styled.div`
   text-align: right;
   color: #ffffff;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     text-align: center;
   }
 `;
@@ -56,7 +56,7 @@ export const CommentArrow = styled.div`
   flex-direction: row;
   gap: 12px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     display: none;
   }
 `;

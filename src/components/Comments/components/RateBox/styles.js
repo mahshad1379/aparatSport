@@ -12,7 +12,7 @@ export const RateBoxStyle = styled.div`
   border: 1px solid #ffffff14;
   background-color: #383942;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     width: 125px;
   }
 `;
