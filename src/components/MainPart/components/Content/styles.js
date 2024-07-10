@@ -49,7 +49,7 @@ export const ContentHeader = styled.div`
 `;
 
 export const ContentText = styled.div`
-  font: 800 24px 'yekanBakh-medium';
+  font: 800 24px 'yekanBakh';
   text-align: right;
   color: #ffffff;
 

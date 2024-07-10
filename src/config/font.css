@@ -1,5 +1,5 @@
   @font-face {
-    font-family: 'yekanBakh-medium';
+    font-family: 'yekanBakh';
     font-style: normal;
     font-weight: 500;
     src: url('../../public/assets/font/yekanBakh/eot/YekanBakhFaNum-Medium.eot');
@@ -12,7 +12,7 @@
   } 
 
   @font-face {
-    font-family: 'yekanBakh-bold';
+    font-family: 'yekanBakh';
     font-style: normal;
     font-weight: 700;
     src: url('../../public/assets/font/yekanBakh/eot/YekanBakhFaNum-Bold.eot');
@@ -25,7 +25,7 @@
   } 
 
 @font-face {
-    font-family: 'yekanBakh-heavy';
+    font-family: 'yekanBakh';
     font-style: normal;
     font-weight: 800;
     src: url('../../public/assets/font/yekanBakh/eot/YekanBakhFaNum-Heavy.eot');
