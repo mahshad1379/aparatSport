@@ -41,9 +41,7 @@ export const Profile = styled.div`
   }
 `;
 export const ProfileText = styled.span`
-  font-family: YekanBakhheavy;
-  font-size: 12px;
-  // font-weight: 600;
+  font: 800 12px 'yekanBakh';
   line-height: 16px;
   text-align: center;
   color: #78c248;
@@ -61,9 +59,7 @@ export const Menu = styled.div`
 export const MenuItem = styled.div`
   display: block;
   height: 16px;
-  font-family: YekanBakhbold;
-  font-size: 12px;
-  // font-weight: 450;
+  font: 700 12px 'yekanBakh';
   line-height: 16px;
   text-align: center;
   color: #ffffff;
@@ -88,9 +84,7 @@ export const MenuFrame3 = styled.div`
 export const MenuFrame3Text = styled.div`
   width: 52px;
   height: 16px;
-  font-family: YekanBakhbold;
-  font-size: 12px;
-  // font-weight: 450;
+  font: 700 12px 'yekanBakh';
   line-height: 16px;
   text-align: left;
   color: #78c248;

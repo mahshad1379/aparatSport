@@ -11,9 +11,7 @@ export const DownloadBoxStyle = styled.div`
 `;
 
 export const Info = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #a4a6bc;
@@ -35,9 +33,7 @@ export const ContentStyle = styled.div`
 `;
 
 export const ContentHeader = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 16px;
   text-align: right;
   color: #64ff00;

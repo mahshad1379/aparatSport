@@ -20,9 +20,7 @@ export const QuestionBoxUpside = styled.div`
 `;
 
 export const QuestionBoxUpsideText = styled.div`
-  font-family: YekanBakhheavy;
-  font-size: 16px;
-  // font-weight: 600;
+  font: 800 16px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #78c248;
@@ -39,9 +37,7 @@ export const QuestionBoxDownSide = styled.div`
 `;
 
 export const QuestionBoxDownSideText = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #e7e9f2;

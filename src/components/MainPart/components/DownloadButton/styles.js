@@ -9,9 +9,7 @@ export const ButtonContainer = styled.div`
 
 export const ButtonText = styled.div`
   background: none;
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #ffffff;

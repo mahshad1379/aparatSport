@@ -37,9 +37,7 @@ export const OptionBoxContent = styled.div`
 `;
 
 export const OptionBoxHeader = styled.h3`
-  font-family: YekanBakhheavy;
-  font-size: 20px;
-  // font-weight: 600;
+  font: 800 20px 'yekanBakh';
   line-height: 24px;
   color: #ffffff;
   text-align: center;
@@ -51,9 +49,7 @@ export const OptionBoxHeader = styled.h3`
 `;
 
 export const OptionBoxText = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   color: #a4a6bc;
   text-align: center;

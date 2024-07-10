@@ -45,9 +45,7 @@ export const GreenButton = styled.button`
 `;
 
 export const GreenButtonText = styled.div`
-  font-family: YekanBakhheavy;
-  font-size: 16px;
-  // font-weight: 600;
+  font: 800 16px 'yekanBakh';
   line-height: 24px;
   text-align: left;
   color: #000000;
@@ -90,9 +88,7 @@ export const UpsideContent = styled.div`
 `;
 
 export const UpsideContentHeader = styled.h2`
-  font-family: YekanBakhheavy;
-  font-size: 28px;
-  // font-weight: 600;
+  font: 800 28px 'yekanBakh';
   line-height: 32px;
   text-align: right;
   color: #ffffff;
@@ -106,9 +102,7 @@ export const UpsideContentHeader = styled.h2`
 export const UpsideContentText = styled.div`
   width: 422.22px;
   height: 48px;
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #a4a6bc;

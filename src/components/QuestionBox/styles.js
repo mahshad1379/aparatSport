@@ -9,9 +9,7 @@ export const QuestionPartContent = styled.div`
 `;
 
 export const QuestionPartHeader = styled.div`
-  font-family: YekanBakhheavy;
-  font-size: 28px;
-  // font-weight: 600;
+  font: 800 28px 'yekanBakh';
   line-height: 32px;
   text-align: center;
   color: #ffffff;
@@ -23,9 +21,7 @@ export const QuestionPartHeader = styled.div`
 `;
 
 export const QuestionPartText = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: center;
   color: #a4a6bc;

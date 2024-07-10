@@ -27,9 +27,7 @@ export const DownloadBoxItem = styled.div`
 
 export const DownloadBoxTitleText = styled.div`
   text-align: right;
-  font-family: YekanBakhheavy;
-  font-size: 16px;
-  // font-weight: 600;
+  font: 800 16px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #ffffff;

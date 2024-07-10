@@ -31,7 +31,7 @@ export const CommentContent = styled.div`
 export const CommentContentText = styled.div`
   width: 279px;
   height: 32px;
-  font-family: YekanBakhheavy;
+  font: 500 14px 'yekanBakh';
   font-size: 28px;
   // font-weight: 600;
   line-height: 32px;

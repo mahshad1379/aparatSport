@@ -40,9 +40,7 @@ export const LiveBrodcast = styled.div`
 `;
 
 export const Item = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 13px;
-  // font-weight: 325;
+  font: 500 13px 'yekanBakh';
   line-height: 16px;
   letter-spacing: 0.4000000059604645px;
   text-align: center;

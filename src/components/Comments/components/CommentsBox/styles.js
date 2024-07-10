@@ -19,9 +19,7 @@ export const CommentBoxContent = styled.div`
 `;
 
 export const CommentName = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 14px;
-  // font-weight: 325;
+  font: 500 14px 'yekanBakh';
   line-height: 24px;
   text-align: right;
   color: #a4a6bc;
@@ -30,9 +28,7 @@ export const CommentName = styled.div`
 export const CommentText = styled.div`
   width: 357.33px;
   height: 112px;
-  font-family: YekanBakhMedium;
-  font-size: 16px;
-  // font-weight: 325;
+  font: 500 16px 'yekanBakh';
   line-height: 28px;
   text-align: right;
   color: #f2f2f2;
@@ -46,9 +42,7 @@ export const CommentInfo = styled.div`
 `;
 
 export const CommentDate = styled.div`
-  font-family: YekanBakhMedium;
-  font-size: 12px;
-  // font-weight: 325;
+  font: 500 12px 'yekanBakh';
   line-height: 16px;
   text-align: right;
   color: #a4a6bc;
