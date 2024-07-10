@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  margin-top: 70px;
 `;
 
 export const Image = styled.img`
@@ -33,7 +34,7 @@ export const Header = styled.div`
   text-align: center;
   color: #ffffff;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 18px;
   }
 `;
@@ -46,7 +47,7 @@ export const Text = styled.div`
   text-align: center;
   color: #a4a6bc;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     font-size: 12px;
   }
 `;
@@ -57,7 +58,7 @@ export const ButtonContainer = styled.div`
   margin-top: 48px;
   gap: 12px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 360px) {
     flex-direction: column;
   }
 `;
