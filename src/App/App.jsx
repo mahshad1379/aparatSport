@@ -1,11 +1,11 @@
-import CTASection from "../components/CTASection";
-import Comments from "../components/Comments";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import MainPart from "../components/MainPart";
-import OptionBox from "../components/OptionBox";
-import QuestionBox from "../components/QuestionBox";
-import TVPart from "../components/TvPart";
+import CTASection from "../section/CTASection";
+import Comments from "../section/Comments";
+import Footer from "../section/Footer";
+import Header from "../section/Header";
+import MainPart from "../section/MainPart";
+import OptionBox from "../section/OptionBox";
+import QuestionBox from "../section/QuestionBox";
+import TVPart from "../section/TvPart";
 import { AppStyle, UpSide } from "./styles.js";
 import "./styles";
 
