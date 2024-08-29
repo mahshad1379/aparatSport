@@ -68,7 +68,7 @@ const Comments = () => {
     arrows: true,
     responsive: [
       {
-        breakpoint: 751,
+        breakpoint: 741,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

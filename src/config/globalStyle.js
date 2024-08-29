@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
     padding: 1.5rem;
     box-sizing: border-box;
 
-    @media (max-width: 751px) {
+    @media (max-width: 741px) {
         padding: 0px;
     }
 `;

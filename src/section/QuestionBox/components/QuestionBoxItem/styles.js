@@ -10,11 +10,11 @@ export const QuestionBoxItemStyle = styled.div`
   width: 60%;
   margin-bottom: 16px;
 
-  @media (max-width: 751px) {
-    width: 100%;
+  @media (max-width: 1281px) {
+    width: 70%;
   }
 
-  @media (max-width: 361px) {
+  @media (max-width: 741px) {
     width: 100%;
   }
 `;

@@ -15,7 +15,7 @@ ${DisplayFlex}
   background: #1b1c26;
   border-top: 1px solid #282a37;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     display: none;
   }
 `;

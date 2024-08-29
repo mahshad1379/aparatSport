@@ -18,7 +18,7 @@ export const OptionBoxStyle = styled.div`
   border: 1px solid;
   overflow: hidden;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     width: 65%;
     margin-top: 100px;
     flex-shrink: 0;
@@ -74,7 +74,7 @@ export const OptionPartStyle = styled.div`
   margin: 40px 0;
   gap: 16px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     justify-content: start;
     flex-wrap: nowrap;
     overflow: scroll hidden;

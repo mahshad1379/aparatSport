@@ -22,9 +22,13 @@ export const AparatSportLogo = styled.img`
   ${PosAbsolute}
   right: 700px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     right: 330px;
     width: 10%;
+  }
+
+  @media (max-width: 361px) {
+    right:160px;
   }
 `;
 
@@ -33,7 +37,7 @@ export const ContentBox = styled.div`
   align-items: center;
   margin-top: 48px;
   gap: 8px;
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     margin-top: 30px;
   }
 `;
@@ -66,7 +70,7 @@ export const ButtonContainer = styled.div`
   gap: 12px;
   width: 35%;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${FlexCol}
     align-items: center;
     width: 100%;

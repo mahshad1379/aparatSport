@@ -7,7 +7,7 @@ ${FlexRow}
   justify-content: space-between;
   padding-top: 100px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${FlexCol}
     padding: 70px 10px 0;
   }

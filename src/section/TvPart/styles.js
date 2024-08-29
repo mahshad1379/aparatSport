@@ -12,7 +12,7 @@ export const TvPart = styled.div`
   ${PosRelative}
   height: 614px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${FlexCol}
     margin: 0 0 50px 0;
   }
@@ -24,9 +24,8 @@ export const TvPartBackground = styled.div`
   background-position: center;
   background-size: cover;
 
-  @media (max-width: 751px) {
-      background-image: unset;
-
+  @media (max-width: 741px) {
+    background-image: unset;
   }
 `;
 
@@ -44,7 +43,7 @@ export const LeftPart = styled.div`
 export const ImgContainer = styled.div`
   display: none;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${DisplayFlex}
     height: 100%;
     ${PosRelative}
@@ -57,9 +56,9 @@ export const Img = styled.img`
   height: 100%;
   width: 100%;
 
-@media (max-width: 751px) {
+  @media (max-width: 741px) {
     transform: scale(1.8);
-    left: 300px;
+    left: 270px;
     top: 55px;
     height: 40%;
   }
@@ -79,6 +78,13 @@ export const GreenButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1281px) {
+    width: 70%;
+    align-items: start;
+  }
+    @media (max-width: 741px) {
+    width: 67%;
+  }
   @media (max-width: 361px) {
     width: 42%;
   }
@@ -103,7 +109,7 @@ export const RightPart = styled.div`
   gap: 96px;
   z-index: 1;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     padding: 0;
     ${PosRelative}
     top: 400px;

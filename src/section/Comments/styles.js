@@ -6,7 +6,7 @@ export const CommentStyle = styled.div`
   padding: 0px 96px 0px 96px;
   margin-top: 70px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     padding: 0px;
   }
 `;
@@ -16,7 +16,7 @@ export const CommentUpside = styled.div`
   margin-bottom: 40px;
   justify-content: space-between;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${FlexCol}
     align-items: center;
   }
@@ -26,7 +26,7 @@ export const CommentContent = styled.div`
 ${FlexRow}
   gap: 24px;
 
-  @media (max-width: 751px) {
+  @media (max-width: 741px) {
     ${FlexCol}
     align-items: center;
   }
