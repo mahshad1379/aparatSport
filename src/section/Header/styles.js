@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DisplayFlex, FlexRow } from "../../config/globalStyle";
 
 export const HeaderStyle = styled.div`
   position: fixed;
@@ -13,8 +14,7 @@ export const HeaderStyle = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   align-items: center;
   justify-content: space-between;
 
@@ -24,14 +24,13 @@ export const HeaderContainer = styled.div`
 
 
 export const LeftPart = styled.div `
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   align-items: center;
   gap: 32px;
 `;
 
 export const Profile = styled.div `
-  display: flex;
+${DisplayFlex}
   padding: 12px 24px 12px 24px;
   gap: 8px;
   border-radius: 8px;
@@ -50,8 +49,7 @@ export const ProfileText = styled.span`
 `;
 
 export const Menu = styled.div `
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 32px;
   align-items: center;
 
@@ -69,8 +67,8 @@ export const MenuItem = styled.div `
 `;
 
 export const MenuFrame3 = styled.div `
+${DisplayFlex}
   gap: 2px;
-  display: flex;
   align-items: center;
 
   @media (max-width: 361px) {

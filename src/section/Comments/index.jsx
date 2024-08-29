@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MainContainer } from "../../config/globalStyle";
+import Icon from "../../Icon/index.jsx";
 
 import {
   CommentStyle,
@@ -16,7 +17,6 @@ import {
   CommentArrow,
   ArrowBox,
 } from "./styles.js";
-import { Icon } from "@mui/material";
 
 const NextArrow = (props) => {
   const { style, onClick } = props;
@@ -28,8 +28,8 @@ const NextArrow = (props) => {
     >
       <Icon
         name={"arrow_right"}
-        width="24"
-        height="24"
+        width="24px"
+        height="24px"
         viewBox="0 0 24 24"
         className
         fill="none"
@@ -47,8 +47,8 @@ const PreArrow = (props) => {
     >
       <Icon
         name={"arrow_left"}
-        width="24"
-        height="24"
+        width="24px"
+        height="24px"
         viewBox="0 0 24 24"
         fill="none"
       />
@@ -67,6 +67,14 @@ const Comments = () => {
     initialSlide: 0,
     arrows: true,
     responsive: [
+      {
+        breakpoint: 751,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
       {
         breakpoint: 361,
         settings: {

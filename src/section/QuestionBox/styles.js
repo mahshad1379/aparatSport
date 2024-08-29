@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexCol } from "../../config/globalStyle";
 
 export const MainContainer = styled.div`
   width: 100%;
@@ -43,8 +44,7 @@ export const QuestionPartText = styled.div`
 
 export const QuestionBoxContainer = styled.div`
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
+  ${FlexCol}
   align-items: center;
 
   @media (max-width: 361px) {

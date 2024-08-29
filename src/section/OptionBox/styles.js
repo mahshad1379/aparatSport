@@ -1,18 +1,31 @@
 import styled from "styled-components";
+import {
+  FlexRow,
+  FlexCol,
+  DisplayFlex,
+  PosRelative,
+  PosAbsolute,
+} from "../../config/globalStyle";
 
 export const OptionBoxStyle = styled.div`
-  position: relative;
-  display: flex;
+  ${DisplayFlex}
+  ${PosRelative}
   justify-content: center;
-  width: 404px;
+  width: 27.5%;
   height: 614px;
   border-radius: 16px;
   background: #0a0b10;
   border: 1px solid;
   overflow: hidden;
 
+  @media (max-width: 751px) {
+    width: 65%;
+    margin-top: 100px;
+    flex-shrink: 0;
+  }
+
   @media (max-width: 361px) {
-    width: 300px;
+    width: 90%;
     margin-bottom: 16px;
     flex-shrink: 0;
     height: 370px;
@@ -20,9 +33,8 @@ export const OptionBoxStyle = styled.div`
 `;
 
 export const OptionBoxContent = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+  ${PosAbsolute}
+  ${FlexCol}
   align-items: center;
   justify-content: center;
   top: 56px;
@@ -34,7 +46,7 @@ export const OptionBoxContent = styled.div`
 `;
 
 export const OptionBoxHeader = styled.h3`
-  font: 800 20px 'yekanBakh';
+  font: 800 20px "yekanBakh";
   line-height: 24px;
   color: #ffffff;
   text-align: center;
@@ -46,7 +58,7 @@ export const OptionBoxHeader = styled.h3`
 `;
 
 export const OptionBoxText = styled.div`
-  font: 500 14px 'yekanBakh';
+  font: 500 14px "yekanBakh";
   line-height: 24px;
   color: #a4a6bc;
   text-align: center;
@@ -57,14 +69,15 @@ export const OptionBoxText = styled.div`
 `;
 
 export const OptionPartStyle = styled.div`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   justify-content: center;
   margin: 40px 0;
   gap: 16px;
-  @media (max-width: 361px) {
+
+  @media (max-width: 751px) {
     justify-content: start;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow: scroll hidden;
+    padding: 0 20px;
   }
 `;

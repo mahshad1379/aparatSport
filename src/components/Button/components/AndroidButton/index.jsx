@@ -7,8 +7,8 @@ const AndroidButton = () => {
     <Button>
       <Icon
         name={"android"}
-        width="21"
-        height="20"
+        width="21px"
+        height="20px"
         viewBox="0 0 21 20"
         fill="none"
       />

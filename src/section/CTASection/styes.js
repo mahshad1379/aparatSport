@@ -1,29 +1,41 @@
 import styled from "styled-components";
+import {
+  FlexRow,
+  FlexCol,
+  PosRelative,
+  PosAbsolute,
+} from "../../config/globalStyle";
 
 export const Container = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  ${FlexCol}
   text-align: center;
   justify-content: center;
   margin-top: 70px;
 `;
 
 export const Image = styled.img`
-  position: relative;
+  ${PosRelative}
 `;
 
 export const AparatSportLogo = styled.img`
-  position: absolute;
+  ${PosAbsolute}
   right: 700px;
+
+  @media (max-width: 751px) {
+    right: 330px;
+    width: 10%;
+  }
 `;
 
 export const ContentBox = styled.div`
-  display: flex;
-  flex-direction: column;
+  ${FlexCol}
   align-items: center;
   margin-top: 48px;
   gap: 8px;
+  @media (max-width: 751px) {
+    margin-top: 30px;
+  }
 `;
 
 export const Header = styled.div`
@@ -49,14 +61,13 @@ export const Text = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   margin-top: 48px;
   gap: 12px;
   width: 35%;
 
-  @media (max-width: 361px) {
-    flex-direction: column;
+  @media (max-width: 751px) {
+    ${FlexCol}
     align-items: center;
     width: 100%;
   }
@@ -72,8 +83,7 @@ export const Button = styled.button`
 `;
 
 export const ButtonContent = styled.div`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   text-align: center;
   justify-content: center;
 `;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { PosAbsolute } from "../../../../config/globalStyle";
 
 export const MainImage = styled.img`
-  position: absolute;
+  ${PosAbsolute}
   top: 152px;
   left: 40px;
 
@@ -13,7 +14,7 @@ export const MainImage = styled.img`
 `;
 
 export const ButtonImage = styled.img`
-  position: absolute;
+  ${PosAbsolute}
   top: 494px;
   left: 134px;
 
@@ -25,7 +26,7 @@ export const ButtonImage = styled.img`
 `;
 
 export const TopImage = styled.img`
-  position: absolute;
+  ${PosAbsolute}
   top: 193.08px;
   left: 17px;
   

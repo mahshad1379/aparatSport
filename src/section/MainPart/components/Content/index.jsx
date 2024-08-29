@@ -58,8 +58,8 @@ const Content = () => {
               <DownloadBoxTitleLogo>
                 <Icon
                   name={"title_logo"}
-                  width="20"
-                  height="20"
+                  width="20px"
+                  height="20px"
                   viewBox="0 0 20 20"
                   fill="none"
                 />
@@ -69,8 +69,8 @@ const Content = () => {
             <Icon
               style={{ padding: " 8.25px 4.25px 8.25px 4.25px" }}
               name={"link_icon"}
-              width="22"
-              height="22"
+              width="22px"
+              height="22px"
               viewBox="0 0 22 22"
               fill="none"
             />

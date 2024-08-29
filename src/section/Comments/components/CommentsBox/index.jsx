@@ -5,7 +5,6 @@ import {
   CommentName,
   CommentText,
   CommentInfo,
-  CommentLogo,
   CommentDate,
 } from "./styles.js";
 
@@ -17,7 +16,7 @@ const CommentsBox = ({ name, text, date, logo }) => {
         <CommentText>{text}</CommentText>
       </CommentBoxContent>
       <CommentInfo>
-        <CommentLogo src={logo} alt="logo" />
+        <img src={logo} alt="logo" />
         <CommentDate>{date}</CommentDate>
       </CommentInfo>
     </CommentsBoxStyle>

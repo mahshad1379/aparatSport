@@ -25,8 +25,8 @@ const DownloadBox = ({ item, index, openKey, handleOpenAccordion}) => {
                 textAlign: "center",
               }}
               name={"arrow_down"}
-              width="16"
-              height="8"
+              width="16px"
+              height="8px"
               viewBox="0 0 16 8"
               fill="none"
             />
@@ -37,8 +37,8 @@ const DownloadBox = ({ item, index, openKey, handleOpenAccordion}) => {
                 textAlign: "center",
               }}
               name={"arrow_up"}
-              width="16"
-              height="8"
+              width="16px"
+              height="8px"
               viewBox="0 0 16 8"
               fill="none"
             />

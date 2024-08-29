@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { FlexCol } from "../../../../config/globalStyle";
 
 export const DownloadBoxStyle = styled.div`
-  display: flex;
-  flex-direction: column;
+${FlexCol}
   margin-bottom: 16px;
   margin-top: 40px;
 `;
@@ -19,8 +19,7 @@ export const Info = styled.div`
   }
 `;
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+${FlexCol}
   margin 40px;
 `;
 export const ContentContainer = styled.div`

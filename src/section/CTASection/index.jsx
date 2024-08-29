@@ -12,7 +12,7 @@ import {
   ButtonText,
 } from "./styes.js";
 import { MainContainer } from "../../config/globalStyle.js";
-import { Icon } from "@mui/material";
+import Icon from "../../Icon/index.jsx";
 
 const CTASection = () => {
   return (
@@ -33,8 +33,8 @@ const CTASection = () => {
             <ButtonContent>
             <Icon
               name={"download_icon"}
-              width="25"
-                height="24"
+              width="25px"
+                height="24px"
                 viewBox="0 0 25 24"
                 fill="none"
             />
@@ -45,8 +45,8 @@ const CTASection = () => {
             <ButtonContent>
             <Icon
               name={"profile_icon"}
-              width="24"
-                height="24"
+              width="24px"
+                height="24px"
                 viewBox="0 0 24 24"
                 fill="none"
             />

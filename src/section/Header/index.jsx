@@ -11,7 +11,7 @@ import {
   ProfileText,
   HeaderContainer,
 } from "./styles";
-import Icon from "../../Icon";
+import Icon from "../../Icon/index";
 
 const Header = () => {
   const [color, setColor] = useState(false);
@@ -30,8 +30,8 @@ const Header = () => {
         <HeaderContainer>
             <Icon
               name={"aparat_logo"}
-              width="129"
-              height="32"
+              width="129px"
+              height="32px"
               viewBox="0 0 129 32"
               fill="none"
             />
@@ -41,8 +41,8 @@ const Header = () => {
               <MenuFrame3>
                 <Icon
                   name={"green_circle"}
-                  width="16"
-                  height="16"
+                  width="16px"
+                  height="16px"
                   viewBox="0 0 16 16"
                   fill="none"
                 />
@@ -53,8 +53,8 @@ const Header = () => {
                 <Icon
                 style={{padding: "2.29px 2.29px 2.32px 2.29px"}}
                   name={"search"}
-                  width="20"
-                  height="20"
+                  width="20px"
+                  height="20px"
                   viewBox="0 0 20 20"
                   fill="none"
                 />

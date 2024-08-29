@@ -19,8 +19,8 @@ const Footer = () => {
           <RightPart>
             <Icon
               name={"aparat_sport"}
-              width="88"
-              height="20"
+              width="88px"
+              height="20px"
               viewBox="0 0 88 20"
               fill="none"
             />
@@ -28,8 +28,8 @@ const Footer = () => {
               <LiveBrodcast>
                 <Icon
                   name={"live_brodcast"}
-                  width="17"
-                  height="16"
+                  width="17px"
+                  height="16px"
                   viewBox="0 0 17 16"
                   fill="none"
                 />
@@ -43,22 +43,22 @@ const Footer = () => {
           <LeftPart>
             <Icon
               name={"linkdin"}
-              width="32"
-              height="32"
+              width="32px"
+              height="32px"
               viewBox="0 0 32 32"
               fill="none"
             />
             <Icon
               name={"instagram"}
-              width="32"
-              height="32"
+              width="32px"
+              height="32px"
               viewBox="0 0 32 32"
               fill="none"
             />
             <Icon
               name={"twitter"}
-              width="32"
-              height="32"
+              width="32px"
+              height="32px"
               viewBox="0 0 32 32"
               fill="none"
             />

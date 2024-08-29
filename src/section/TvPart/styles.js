@@ -1,9 +1,39 @@
 import styled from "styled-components";
+import {
+  FlexRow,
+  FlexCol,
+  DisplayFlex,
+  PosRelative,
+  PosAbsolute,
+} from "../../config/globalStyle";
+
+export const TvPart = styled.div`
+  margin-top: 40px;
+  ${PosRelative}
+  height: 614px;
+
+  @media (max-width: 751px) {
+    ${FlexCol}
+    margin: 0 0 50px 0;
+  }
+`;
+
+export const TvPartBackground = styled.div`
+  background-image: url("./assets/img/tv-part/TV-BG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 751px) {
+      background-image: unset;
+
+  }
+`;
 
 export const LeftPart = styled.div`
   width: 100%;
   height: 100%;
-  position: absolute;
+  ${PosAbsolute}
 
   @media (max-width: 361px) {
     height: 50%;
@@ -12,34 +42,40 @@ export const LeftPart = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  height: 100%;
-  position: relative;
-  display: flex;
-  overflow: hidden;
+  display: none;
 
-  @media (max-width: 361px) {
+  @media (max-width: 751px) {
+    ${DisplayFlex}
+    height: 100%;
+    ${PosRelative}
+    overflow: hidden;
   }
 `;
 
 export const Img = styled.img`
-  position: absolute;
+  ${PosAbsolute}
   height: 100%;
   width: 100%;
 
+@media (max-width: 751px) {
+    transform: scale(1.8);
+    left: 300px;
+    top: 55px;
+    height: 40%;
+  }
   @media (max-width: 361px) {
     transform: scale(1.72);
     left: 125px;
-    top: 55px;
     height: 70%;
   }
 `;
 
 export const GreenButton = styled.button`
+  ${DisplayFlex}
   width: 67%;
   padding: 16px;
   border-radius: 8px;
   background: #78c248;
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -49,26 +85,16 @@ export const GreenButton = styled.button`
 `;
 
 export const GreenButtonText = styled.div`
-  font: 800 16px 'yekanBakh';
+  font: 800 16px "yekanBakh";
   line-height: 24px;
   text-align: left;
   color: #000000;
   text-align: center;
 `;
 
-export const TvPart = styled.div`
-  margin-top: 40px;
-  position: relative;
-  height: 614px;
-
-  @media (max-width: 361px) {
-    flex-direction: column;
-  }
-`;
-
 export const RightPart = styled.div`
-  position: absolute;
-  display: flex;
+  ${DisplayFlex}
+  ${PosAbsolute}
   justify-content: center;
   align-item: center;
   width: 50%;
@@ -77,13 +103,18 @@ export const RightPart = styled.div`
   gap: 96px;
   z-index: 1;
 
-  @media (max-width: 361px) {
+  @media (max-width: 751px) {
     padding: 0;
-    position: relative;
-    top: 270px;
+    ${PosRelative}
+    top: 400px;
     width: 100%;
     padding: 20px 0px 30px;
     text-align: center;
+  }
+
+  @media (max-width: 361px) {
+    ${PosRelative}
+    top: 270px;
   }
 `;
 export const Content = styled.div``;
@@ -97,7 +128,7 @@ export const UpsideContent = styled.div`
 `;
 
 export const UpsideContentHeader = styled.h2`
-  font: 800 28px 'yekanBakh';
+  font: 800 28px "yekanBakh";
   line-height: 32px;
   text-align: right;
   color: #ffffff;
@@ -109,7 +140,7 @@ export const UpsideContentHeader = styled.h2`
 `;
 
 export const UpsideContentText = styled.div`
-  font: 500 14px 'yekanBakh';
+  font: 500 14px "yekanBakh";
   line-height: 24px;
   text-align: right;
   color: #a4a6bc;
@@ -121,18 +152,16 @@ export const UpsideContentText = styled.div`
 `;
 
 export const DownSideContent = styled.div`
-  display: flex;
-  flex-direction: column;
+  ${FlexCol}
   align-items: center;
   gap: 10px;
 `;
 
 export const OptionDownloadBox = styled.div`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   gap: 8px;
   @media (max-width: 361px) {
-    flex-direction: column;
+    ${FlexCol}
     gap: 10px;
   }
 `;

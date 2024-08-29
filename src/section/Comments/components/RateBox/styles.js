@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { FlexRow, PosAbsolute, PosRelative } from "../../../../config/globalStyle";
 
 export const RateBoxStyle = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   justify-content: center;
   align-items: center;
   padding: 8px 12px 8px 12px;
@@ -18,19 +18,17 @@ export const RateBoxStyle = styled.div`
 `;
 
 export const RateBoxPoint = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 4px;
 `;
 
 export const RateBoxPointText = styled.div`
-  position: relative;
+${PosRelative}
   width: 30px;
-  margin-top: -3px;
   color: #ff9901;
   &:before {
     content: "";
-    position: absolute;
+    ${PosAbsolute}
     width: 20px;
     border: 1px solid #ffffff14;
     transform: rotate(90deg);

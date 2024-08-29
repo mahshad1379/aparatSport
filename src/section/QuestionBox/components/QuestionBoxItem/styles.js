@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DisplayFlex } from "../../../../config/globalStyle";
 
 export const QuestionBoxItemStyle = styled.div`
   padding: 16px 24px 16px 24px;
@@ -6,8 +7,12 @@ export const QuestionBoxItemStyle = styled.div`
   border-radius: 8px;
   background: #1d1e28;
   border: 2px solid #ffffff14;
-  width: 792px;
+  width: 60%;
   margin-bottom: 16px;
+
+  @media (max-width: 751px) {
+    width: 100%;
+  }
 
   @media (max-width: 361px) {
     width: 100%;
@@ -15,12 +20,12 @@ export const QuestionBoxItemStyle = styled.div`
 `;
 
 export const QuestionBoxUpside = styled.div`
-  display: flex;
+  ${DisplayFlex}
   justify-content: space-between;
 `;
 
 export const QuestionBoxUpsideText = styled.div`
-  font: 800 16px 'yekanBakh';
+  font: 800 16px "yekanBakh";
   line-height: 24px;
   text-align: right;
   color: #78c248;
@@ -37,7 +42,7 @@ export const QuestionBoxDownSide = styled.div`
 `;
 
 export const QuestionBoxDownSideText = styled.div`
-  font: 500 14px 'yekanBakh';
+  font: 500 14px "yekanBakh";
   line-height: 24px;
   text-align: right;
   color: #e7e9f2;

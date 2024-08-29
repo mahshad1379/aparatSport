@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { DisplayFlex, FlexRow } from "../../../../config/globalStyle";
 
 export const DownloadBoxContent = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   justify-content: space-between;
 `;
 
@@ -31,7 +31,7 @@ export const DownloadBoxTitleText = styled.div`
 `;
 
 export const DownloadBoxTitle = styled.div`
-  display: flex;
+${DisplayFlex}
   align-items: center;
   gap: 8px;
 `;

@@ -1,4 +1,4 @@
-import { Icon } from "@mui/material";
+import Icon from "../Icon/index";
 
 const DOWNLOAD_ITEM = [
   {
@@ -8,8 +8,8 @@ const DOWNLOAD_ITEM = [
     logo: (
       <Icon
         name={"android_logo"}
-        width="28"
-        height="16"
+        width="28px"
+        height="16px"
         viewBox="0 0 28 16"
         fill="none"
       />
@@ -22,9 +22,9 @@ const DOWNLOAD_ITEM = [
     logo: (
       <Icon
         name={"ios_logo"}
-        width="20"
-        height="24"
-        viewBox="0 0 20 24"
+        width="32px"
+        height="32px"
+        viewBox="0 0 32 32"
         fill="none"
       />
     ),
@@ -36,8 +36,8 @@ const DOWNLOAD_ITEM = [
     logo: (
       <Icon
         name={"webApp_logo"}
-        width="32"
-        height="13"
+        width="32px"
+        height="13px"
         viewBox="0 0 32 13"
         fill="none"
       />

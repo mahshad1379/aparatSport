@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import { FlexRow, FlexCol, PosRelative } from "../../../../config/globalStyle";
 
 export const CommentsBoxStyle = styled.div`
-  position: relative;
+${PosRelative}
   margin-right: 10px;
   margin-left:10px;
   gap:20px;
-  display: flex;
-  flex-direction: column;
+  ${FlexCol}
   padding: 24px;
   border-radius: 12px;
   color: #1d1e281a;
@@ -17,8 +17,7 @@ export const CommentsBoxStyle = styled.div`
 `;
 
 export const CommentBoxContent = styled.div`
-  display: flex;
-  flex-direction: column;
+${FlexCol}
   gap: 24px;
 `;
 
@@ -38,8 +37,7 @@ export const CommentText = styled.div`
 `;
 
 export const CommentInfo = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   justify-content: space-between;
   justify: space-between;
 `;
@@ -50,5 +48,3 @@ export const CommentDate = styled.div`
   text-align: right;
   color: #a4a6bc;
 `;
-
-export const CommentLogo = styled.img``;

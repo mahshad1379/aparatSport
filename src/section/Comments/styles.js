@@ -1,33 +1,33 @@
 import styled from "styled-components";
+import {FlexRow , FlexCol, PosAbsolute} from "../../config/globalStyle"
+
 
 export const CommentStyle = styled.div`
   padding: 0px 96px 0px 96px;
   margin-top: 70px;
 
-  @media (max-width: 361px) {
+  @media (max-width: 751px) {
     padding: 0px;
   }
 `;
 
 export const CommentUpside = styled.div`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   margin-bottom: 40px;
   justify-content: space-between;
 
-  @media (max-width: 361px) {
-    flex-direction: column;
+  @media (max-width: 751px) {
+    ${FlexCol}
     align-items: center;
   }
 `;
 
 export const CommentContent = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 24px;
 
-  @media (max-width: 361px) {
-    flex-direction: column;
+  @media (max-width: 751px) {
+    ${FlexCol}
     align-items: center;
   }
 `;
@@ -45,23 +45,17 @@ export const CommentContentText = styled.div`
 `;
 
 export const CommentRateBox = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 8px;
 `;
 
 export const CommentArrow = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 12px;
-
-  @media (max-width: 361px) {
-    display: none;
-  }
 `;
 
 export const ArrowBox = styled.div`
-position: absolute;
+${PosAbsolute}
   text-align: center;
   padding: 12px;
   border-radius: 12px;
@@ -71,15 +65,5 @@ position: absolute;
 `;
 
 export const CommentDownside = styled.div`
-  // position: relative;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: start;
-  // gap: 16px;
-  overflow: scroll hidden;
-  scroll-behavior: smooth;
   flex-wrap: nowrap;
-  // width: 100%;
-  // margin-top: 32px;
-  scrollbar-width: none;
 `;

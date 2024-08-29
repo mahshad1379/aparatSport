@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexRow } from "../../../config/globalStyle";
 
 export const ButtonText = styled.div`
   background: none;
@@ -14,7 +15,7 @@ export const ButtonText = styled.div`
 `;
 
 export const Button = styled.button`
-  composes: displayFlexRow from "./config/globalStyle.css";
+  ${FlexRow}
   justify-content: center;
   align-items: center;
   background: none;

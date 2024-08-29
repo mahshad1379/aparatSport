@@ -1,45 +1,41 @@
 import styled from "styled-components";
+import { FlexRow, DisplayFlex } from "../../config/globalStyle";
 
 export const FooterContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   align-items: center;
   justify-content: space-between;
 `;
 
 export const Container = styled.div`
-  display: flex;
+${DisplayFlex}
   padding: 7px 152px 7px 152px;
   border: 1px;
   justify-content: space-between;
   background: #1b1c26;
   border-top: 1px solid #282a37;
 
-  @media (max-width: 500px) {
+  @media (max-width: 751px) {
     display: none;
   }
 `;
 
 export const RightPart = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 55px;
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
 `;
 
 export const LeftPart = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
   gap: 23px;
 `;
 
 export const LiveBrodcast = styled.div`
-  display: flex;
-  flex-direction: row;
+${FlexRow}
 `;
 
 export const Item = styled.div`

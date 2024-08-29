@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   QuestionBoxItemStyle,
   QuestionBoxUpside,
@@ -8,23 +7,22 @@ import {
 } from "./styles.js";
 import Icon from "../../../../Icon/index.jsx";
 
-const QuestionBoxItem = ({ answer, question }) => {
-  const [showAnswer, setShowAnswer] = useState(false);
+const QuestionBoxItem = ({ answer, question , index, openKey, handleOpenAccordion }) => {
 
   return (
     <QuestionBoxItemStyle>
       <QuestionBoxUpside>
         <QuestionBoxUpsideText>{question}</QuestionBoxUpsideText>
-        <div onClick={() => setShowAnswer(!showAnswer)}>
-          {showAnswer ? (
+        <div onClick={() => handleOpenAccordion(index)}>
+          {openKey === index ? (
             <Icon
             style={{
               padding: "8.25px 4.25px 8.25px 4.25px",
               textAlign: "center",
             }}
             name={"arrow_down"}
-            width="16"
-            height="8"
+            width="16px"
+            height="8px"
             viewBox="0 0 16 8"
             fill="none"
           />
@@ -35,15 +33,15 @@ const QuestionBoxItem = ({ answer, question }) => {
                 textAlign: "center",
               }}
               name={"arrow_up"}
-              width="16"
-              height="8"
+              width="16px"
+              height="8px"
               viewBox="0 0 16 8"
               fill="none"
             />
           )}
         </div>
       </QuestionBoxUpside>
-      {showAnswer ? (
+      {openKey === index ? (
         <QuestionBoxDownSide>
           <QuestionBoxDownSideText>{answer}</QuestionBoxDownSideText>
         </QuestionBoxDownSide>

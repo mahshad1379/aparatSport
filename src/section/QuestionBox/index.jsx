@@ -11,12 +11,10 @@ import {
 } from "./styles.js";
 
 const QuestionBox = () => {
-  const [openKey, setOpenKey] = useState(null);
-  // const [show, setShow] = useState(false);
+  const [openKey, setOpenKey] = useState(0);
 
   const handleOpenAccordion = (index) => {
     setOpenKey(openKey === index ? null : index);
-    // setShow(!show);
   };
   return (
     <MainContainer>
@@ -30,7 +28,7 @@ const QuestionBox = () => {
         <QuestionBoxContainer>
           {QUESTION_ITEM.map((item, index) => (
             <QuestionBoxItem answer={item.answer} question={item.question} handleOpenAccordion={handleOpenAccordion}
-            openKey={openKey}/>
+            openKey={openKey} index={index}/>
           ))}
         </QuestionBoxContainer>
       </QuestionPartContainer>

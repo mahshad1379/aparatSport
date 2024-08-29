@@ -13,6 +13,7 @@ import {
   OptionDownloadBox,
   UpsideContentHeader,
   UpsideContentText,
+  TvPartBackground,
 } from "./styles.js";
 import AndroidButton from "../../components/Button/components/AndroidButton/index.jsx";
 import BazarButton from "../../components/Button/components/BazarButton/index.jsx";
@@ -20,6 +21,7 @@ import { MainContainer } from "../../config/globalStyle.js";
 
 const TVPart = () => {
   return (
+    <TvPartBackground>
     <TvPart>
       <MainContainer>
       <LeftPart>
@@ -51,7 +53,9 @@ const TVPart = () => {
         </Content>
       </RightPart>
       </MainContainer>
+      
     </TvPart>
+    </TvPartBackground>
   );
 };
 
