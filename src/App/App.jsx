@@ -1,28 +1,18 @@
-import CTASection from "../section/CTASection";
-import Comments from "../section/Comments";
-import Footer from "../section/Footer";
-import Header from "../section/Header";
-import MainPart from "../section/MainPart";
-import OptionBox from "../section/OptionBox";
-import QuestionBox from "../section/QuestionBox";
-import TVPart from "../section/TvPart";
-import { AppStyle, UpSide } from "./styles.js";
-import "./styles";
+import { AppStyle } from "./styles.js";
+// import DownloadPage from "../pages/download/DownloadPage/index.jsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import HomePage from "../pages/home/HomePage/index.jsx";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <AppStyle>
-      <UpSide>
-        <Header />
-        <MainPart />
-      </UpSide>
-      <TVPart />
-      <OptionBox />
-      <Comments />
-      <CTASection />
-      <QuestionBox />
-      <Footer />
-    </AppStyle>
+    <QueryClientProvider client={queryClient}>
+      <AppStyle>
+        <HomePage />
+        {/* <DownloadPage/> */}
+      </AppStyle>
+    </QueryClientProvider>
   );
 }
 

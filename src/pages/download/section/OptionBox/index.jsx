@@ -8,11 +8,11 @@ import { MainContainer } from "../../config/globalStyle.js";
 const OptionBox = () => {
   return (
     <MainContainer>
-    <OptionPartStyle>
-      <FirstImage />
-      <SecondImage />
-      <ThirdImage />
-    </OptionPartStyle>
+      <OptionPartStyle>
+        <FirstImage />
+        <SecondImage />
+        <ThirdImage />
+      </OptionPartStyle>
     </MainContainer>
   );
 };

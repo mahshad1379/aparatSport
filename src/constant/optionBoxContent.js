@@ -1,6 +1,4 @@
 const OPTION_ITEM = [
-
-
   {
     id: 3,
     header: "امکان چت حین تماشای بازی",
