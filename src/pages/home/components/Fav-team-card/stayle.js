@@ -7,8 +7,7 @@ export const TeamContainer = styled.div`
   border: 1px solid #282a37;
 `;
 
-export const TeamLogo = styled.img`
-`;
+export const TeamLogo = styled.img``;
 
 export const TeamName = styled.div`
   font: 500 14px "yekanBakh";

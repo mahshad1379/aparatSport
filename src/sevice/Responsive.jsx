@@ -11,7 +11,7 @@ const ResponsiveForm = () => {
 
   useEffect(() => {
     let deviceType = "website";
-    if (isMobile) deviceType = "mobile";
+    if (isMobile) deviceType = "mobile_view";
     else if (isTablet) deviceType = "tablet";
 
     const newParams = new URLSearchParams(searchParams);

@@ -23,7 +23,7 @@ const HomePage = () => {
 
   return (
     <Style>
-      <SliderPart data={data}/>
+      <SliderPart data={data} />
       <TodayPlaylist data={data} />
       <FavTeam data={data} />
       <Playlist data={nextDay} setClickDate={setClickDate} />

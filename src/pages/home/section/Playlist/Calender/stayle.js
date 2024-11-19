@@ -12,7 +12,7 @@ export const CalenderBox = styled.div`
   @media (max-width: 741px) {
     padding: 5px 16px;
   }
-    @media (max-width: 361px) {
+  @media (max-width: 361px) {
     padding: 0px 4px;
   }
 `;
@@ -30,7 +30,7 @@ export const CalenderDate = styled.button`
   @media (max-width: 741px) {
     font: 300 10px "yekanBakh";
   }
-    @media (max-width: 361px) {
+  @media (max-width: 361px) {
     font: 300 6px "yekanBakh";
   }
 `;

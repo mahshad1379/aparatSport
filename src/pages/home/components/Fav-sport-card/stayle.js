@@ -7,9 +7,7 @@ export const SportContainer = styled.div`
   border: 1px solid #282a37;
 `;
 
-export const SportImage = styled.img`
-
-`;
+export const SportImage = styled.img``;
 
 export const SportName = styled.div`
   font: 500 14px "yekanBakh";
