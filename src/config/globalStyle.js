@@ -1,35 +1,41 @@
-import { styled , css } from "styled-components";
+import { styled, css } from "styled-components";
 
 export const MainContainer = styled.div`
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
 
-    @media (max-width: 741px) {
-        padding: 0px;
-    }
+  @media (max-width: 741px) {
+    padding: 0px;
+  }
 `;
 
 export const FlexRow = css`
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const FlexCol = css`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const DisplayFlex = css`
-    display: flex;
+  display: flex;
 `;
 
 export const PosRelative = css`
-    position: relative;
+  position: relative;
 `;
 
 export const PosAbsolute = css`
-    position: absolute;
+  position: absolute;
+`;
+
+export const FontDetail = css`
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
 `;

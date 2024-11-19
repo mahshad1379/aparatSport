@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexRow } from "../../../config/globalStyle";
+import { FlexRow } from "../../../../../config/globalStyle";
 
 export const ButtonText = styled.div`
   background: none;

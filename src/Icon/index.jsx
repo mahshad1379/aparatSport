@@ -14,6 +14,7 @@ const Icon = ({
   return (
     <StyledSvg
       xmlns="http://www.w3.org/2000/svg"
+      strokeColor={strokeColor}
       width={width}
       height={height}
       viewBox={viewBox}

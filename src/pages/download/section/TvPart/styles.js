@@ -5,7 +5,7 @@ import {
   DisplayFlex,
   PosRelative,
   PosAbsolute,
-} from "../../config/globalStyle";
+} from "../../../../config/globalStyle";
 
 export const TvPart = styled.div`
   margin-top: 40px;
