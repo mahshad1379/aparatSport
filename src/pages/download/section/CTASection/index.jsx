@@ -10,9 +10,9 @@ import {
   Button,
   ButtonContent,
   ButtonText,
-} from "./styes.js";
-import { MainContainer } from "../../config/globalStyle.js";
-import Icon from "../../Icon/index.jsx";
+} from "./style.js";
+import { MainContainer } from "../../../../config/globalStyle.js";
+import Icon from "../../../../Icon/index.jsx";
 
 const CTASection = () => {
   return (

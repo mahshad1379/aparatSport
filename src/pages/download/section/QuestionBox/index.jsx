@@ -1,5 +1,5 @@
 import React , {useState} from "react";
-import QUESTION_ITEM from "../../constant/questionItem";
+import QUESTION_ITEM from "../../../../constant/questionItem.js";
 import QuestionBoxItem from "./components/QuestionBoxItem";
 import {
   MainContainer,

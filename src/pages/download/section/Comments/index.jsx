@@ -1,12 +1,12 @@
 import React from "react";
-import COMMENT_ITEM from "../../constant/commentItem";
+import COMMENT_ITEM from "../../../../constant/commentItem.js";
 import CommentsBox from "./components/CommentsBox";
 import RateBox from "./components/RateBox";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { MainContainer } from "../../config/globalStyle";
-import Icon from "../../Icon/index.jsx";
+import { MainContainer } from "../../../../config/globalStyle.js";
+import Icon from "../../../../Icon/index.jsx";
 
 import {
   CommentStyle,

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../../../config/globalStyle";
+import { DisplayFlex } from "../../../../../../config/globalStyle.js";
 
 export const QuestionBoxItemStyle = styled.div`
   padding: 16px 24px 16px 24px;

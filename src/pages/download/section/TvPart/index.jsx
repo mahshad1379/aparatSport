@@ -17,7 +17,7 @@ import {
 } from "./styles.js";
 import AndroidButton from "../../components/Button/components/AndroidButton/index.jsx";
 import BazarButton from "../../components/Button/components/BazarButton/index.jsx";
-import { MainContainer } from "../../config/globalStyle.js";
+import { MainContainer } from "../../../../config/globalStyle.js";
 
 const TVPart = () => {
   return (

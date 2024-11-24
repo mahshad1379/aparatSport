@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonText, Button } from "../styles.js";
-import Icon from "../../../../Icon/index.jsx";
+import Icon from "../../../../../../Icon/index.jsx";
 
 const AndroidButton = () => {
   return (

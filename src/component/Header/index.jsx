@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MainContainer } from "../../config/globalStyle";
+import { Link } from "react-router-dom";
 import {
   HeaderStyle,
   LeftPart,
@@ -12,6 +12,7 @@ import {
   HeaderContainer,
 } from "./styles";
 import Icon from "../../Icon/index";
+import { MainContainer } from "../../config/globalStyle";
 
 const Header = () => {
   const [color, setColor] = useState(false);
@@ -28,13 +29,13 @@ const Header = () => {
     <HeaderStyle color={color}>
       <MainContainer>
         <HeaderContainer>
-            <Icon
-              name={"aparat_logo"}
-              width="129px"
-              height="32px"
-              viewBox="0 0 129 32"
-              fill="none"
-            />
+          <Icon
+            name={"aparat_logo"}
+            width="129px"
+            height="32px"
+            viewBox="0 0 129 32"
+            fill="none"
+          />
           <LeftPart>
             <Menu>
               <MenuItem>دانلود اپلیکیشن</MenuItem>
@@ -46,18 +47,27 @@ const Header = () => {
                   viewBox="0 0 16 16"
                   fill="none"
                 />
-                <MenuFrame3Text>پخش زنده</MenuFrame3Text>
+                <MenuFrame3Text>
+                  <Link style={{ textDecoration: "none",  }} 
+                  to="/DownloadPage">
+                    دانلود
+                  </Link>
+                </MenuFrame3Text>
               </MenuFrame3>
-              <MenuItem>برنامه پخش</MenuItem>
+              <MenuItem>
+                <Link style={{ textDecoration: "none" }} to="/">
+                  برنامه پخش
+                </Link>
+              </MenuItem>
               <MenuItem>ویدیوها</MenuItem>
-                <Icon
-                style={{padding: "2.29px 2.29px 2.32px 2.29px"}}
-                  name={"search"}
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                />
+              <Icon
+                style={{ padding: "2.29px 2.29px 2.32px 2.29px" }}
+                name={"search"}
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                fill="none"
+              />
             </Menu>
             <Profile>
               <ProfileText>پروفایل کاربری</ProfileText>

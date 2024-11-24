@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexRow, FlexCol } from "../../config/globalStyle";
+import { FlexRow, FlexCol } from "../../../../config/globalStyle";
 
 export const MainPartStyle = styled.div`
 ${FlexRow}

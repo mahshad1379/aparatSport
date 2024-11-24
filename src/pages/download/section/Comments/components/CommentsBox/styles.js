@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexRow, FlexCol, PosRelative } from "../../../../config/globalStyle";
+import { FlexRow, FlexCol, PosRelative } from "../../../../../../config/globalStyle";
 
 export const CommentsBoxStyle = styled.div`
 ${PosRelative}

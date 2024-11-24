@@ -64,6 +64,7 @@ export const MenuItem = styled.div `
   line-height: 16px;
   text-align: center;
   color: #ffffff;
+  text-decoration:none;
 `;
 
 export const MenuFrame3 = styled.div `

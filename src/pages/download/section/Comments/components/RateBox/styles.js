@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexRow, PosAbsolute, PosRelative } from "../../../../config/globalStyle";
+import { FlexRow, PosAbsolute, PosRelative } from "../../../../../../config/globalStyle";
 
 export const RateBoxStyle = styled.div`
 ${FlexRow}
