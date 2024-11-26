@@ -8,7 +8,10 @@ export const TimerContainer = styled.div`
 
 export const TimeBox = styled.div`
   ${FlexCol}
-  padding: 16px;
+  
+  width: 40px;
+  height: 40px;
+  padding: 6px;
   border-radius: 8px;
   background: #1b1c26e5;
   color: #e7e9f2;

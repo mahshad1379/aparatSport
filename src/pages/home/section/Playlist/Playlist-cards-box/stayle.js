@@ -21,6 +21,9 @@ export const PlaylistTitle = styled.div`
 export const CalenderContainer = styled.div`
   ${FlexRow}
   gap: 8px;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  scrollbar-width: none;
 `;
 
 export const PlaylistCardContainer = styled.div`

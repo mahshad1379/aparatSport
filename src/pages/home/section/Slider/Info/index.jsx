@@ -1,5 +1,6 @@
 import React from "react";
 import { InfoBox, Title, Details, Time, Date } from "./style";
+import PN from "persian-number";
 
 const ImageInfo = ({ title, time }) => {
   const gameTime =
@@ -56,8 +57,8 @@ const ImageInfo = ({ title, time }) => {
         <InfoBox>
           <Title>{title}</Title>
           <Details>
-            <Date>{gameDate}</Date>
-            <Time> ساعت {gameTime}</Time>
+            <Date>{PN.convertEnToPe(gameDate)}</Date>
+            <Time> ساعت {PN.convertEnToPe(gameTime)}</Time>
           </Details>
         </InfoBox>
       ) : (

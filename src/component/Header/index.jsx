@@ -38,7 +38,6 @@ const Header = () => {
           />
           <LeftPart>
             <Menu>
-              <MenuItem>دانلود اپلیکیشن</MenuItem>
               <MenuFrame3>
                 <Icon
                   name={"green_circle"}
@@ -47,19 +46,19 @@ const Header = () => {
                   viewBox="0 0 16 16"
                   fill="none"
                 />
-                <MenuFrame3Text>
-                  <Link style={{ textDecoration: "none",  }} 
-                  to="/DownloadPage">
-                    دانلود
-                  </Link>
-                </MenuFrame3Text>
+                <MenuFrame3Text>پخش زنده</MenuFrame3Text>
               </MenuFrame3>
               <MenuItem>
-                <Link style={{ textDecoration: "none" }} to="/">
+                <Link className="menuItem_link" to="/">
                   برنامه پخش
                 </Link>
               </MenuItem>
-              <MenuItem>ویدیوها</MenuItem>
+              <MenuItem>
+                {" "}
+                <Link className="menuItem_link" to="/DownloadPage">
+                   دانلود اپلیکیشن
+                </Link>
+              </MenuItem>
               <Icon
                 style={{ padding: "2.29px 2.29px 2.32px 2.29px" }}
                 name={"search"}

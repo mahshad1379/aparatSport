@@ -4,7 +4,6 @@ export const SliderContainer = styled.div`
   padding-top: 80px;
 
   @media (max-width: 741px) {
-    padding: 1rem;
     padding-top: 50px;
   }
 `;
@@ -19,6 +18,9 @@ export const TimerBox = styled.div`
   z-index: 1;
   top: 16px;
   left: 16px;
+  @media (max-width: 741px) {
+    top: 216px;
+  }
 `;
 
 export const SliderBox = styled.div`

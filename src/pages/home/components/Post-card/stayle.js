@@ -8,8 +8,7 @@ export const CardBox = styled.div`
 `;
 
 export const CardImageContainer = styled.img`
-  width: 272px;
-  height: 176px;
+  height: 191px;
   border-radius: 8px;
   background: #f2f2f2;
 `;
@@ -18,37 +17,34 @@ export const CardContentBox = styled.div`
   font: 500 14px "yekanBakh";
   color: #f2f2f2;
   ${FlexCol}
-  gap:16px;
   height: 100px;
-  justify-content: space-around;
-  padding: 0 13px;
-  position: relative;
+  justify-content: space-between;
 `;
 
 export const CardContentTitle = styled.div`
   font: 500 14px "yekanBakh";
   ${FontDetail}
   color: #F2F2F2;
+  padding: 0 13px;
 `;
 
 export const CardDetails = styled.div`
   ${FlexRow}
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const CardReporter = styled.div`
   font: 500 14px "yekanBakh";
   ${FontDetail}
   color: #A4A6BC;
+  padding: 0 13px;
 `;
 
 export const CardTime = styled.div`
   ${FlexRow}
   align-items: center;
   gap: 5px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   padding: 8px 12px 8px 12px;
   border-radius: 0px 8px 0px 8px;
   background: #202231;

@@ -22,15 +22,14 @@ ${FlexRow}
     margin: 5px 5px 0px 5px;
 `;
 
-
-export const LeftPart = styled.div `
-${FlexRow}
+export const LeftPart = styled.div`
+  ${FlexRow}
   align-items: center;
   gap: 32px;
 `;
 
-export const Profile = styled.div `
-${DisplayFlex}
+export const Profile = styled.div`
+  ${DisplayFlex}
   padding: 12px 24px 12px 24px;
   gap: 8px;
   border-radius: 8px;
@@ -42,14 +41,14 @@ ${DisplayFlex}
   }
 `;
 export const ProfileText = styled.span`
-  font: 800 12px 'yekanBakh';
+  font: 800 12px "yekanBakh";
   line-height: 16px;
   text-align: center;
   color: #78c248;
 `;
 
-export const Menu = styled.div `
-${FlexRow}
+export const Menu = styled.div`
+  ${FlexRow}
   gap: 32px;
   align-items: center;
 
@@ -58,17 +57,19 @@ ${FlexRow}
   }
 `;
 
-export const MenuItem = styled.div `
+export const MenuItem = styled.div`
   display: block;
-  font: 700 12px 'yekanBakh';
-  line-height: 16px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration:none;
+  > .menuItem_link {
+    font: 700 12px "yekanBakh";
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
 `;
 
-export const MenuFrame3 = styled.div `
-${DisplayFlex}
+export const MenuFrame3 = styled.div`
+  ${DisplayFlex}
   gap: 2px;
   align-items: center;
 
@@ -77,10 +78,9 @@ ${DisplayFlex}
   }
 `;
 
-export const MenuFrame3Text = styled.div `
-  font: 700 12px 'yekanBakh';
+export const MenuFrame3Text = styled.div`
+  font: 700 12px "yekanBakh";
   line-height: 16px;
   text-align: left;
   color: #78c248;
 `;
-

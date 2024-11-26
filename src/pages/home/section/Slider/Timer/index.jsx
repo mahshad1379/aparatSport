@@ -1,6 +1,7 @@
 import React from "react";
 import { Time, TimeBox, TimerContainer, TimeText } from "./style";
 import moment from "moment/moment";
+import PN from "persian-number";
 
 const Timer = ({ time }) => {
   const gameTime = String(time).split(" ")[1];
@@ -23,20 +24,21 @@ const Timer = ({ time }) => {
   const seconds = time1.diff(time2, "seconds");
   time2.add(seconds, "seconds");
 
+
   return (
     <>
-      {time ? (
+      {(hours<0 || minutes<0 || seconds<0 || time) ? (
         <TimerContainer>
           <TimeBox>
-            <Time>{hours}</Time>
+            <Time>{PN.convertEnToPe(hours)}</Time>
             <TimeText>ساعت</TimeText>
           </TimeBox>
           <TimeBox>
-            <Time>{minutes}</Time>
+            <Time>{PN.convertEnToPe(minutes)}</Time>
             <TimeText>دقیقه</TimeText>
           </TimeBox>
           <TimeBox>
-            <Time>{seconds}</Time>
+            <Time>{PN.convertEnToPe(seconds)}</Time>
             <TimeText>ثانیه</TimeText>
           </TimeBox>
         </TimerContainer>

@@ -5,20 +5,22 @@ import Playlist from "../section/Playlist/Playlist-cards-box/index.jsx";
 import TodayPlaylist from "../section/Today-playlist/index.jsx";
 import { Style } from "./stayle";
 import { useQuery } from "@tanstack/react-query";
-import { getHomeData, getNextDaysData } from "../../../sevice/Home.js";
+import { getHomeData, getNextDaysData } from "../../../service/Home.js";
 import SliderPart from "../section/Slider/index.jsx";
+import useResponsiveForm from "../../../service/Responsive.jsx";
 
 const HomePage = () => {
   const [clickDate, setClickDate] = useState(0);
+  const deviceType = useResponsiveForm();
 
   const { data } = useQuery({
     queryKey: ["match_test"],
-    queryFn: getHomeData,
+    queryFn: () => getHomeData({ deviceType }),
   });
 
   const { data: nextDay, refetch: nextDayRefetch } = useQuery({
     queryKey: [`date_${clickDate}`],
-    queryFn: () => getNextDaysData(clickDate),
+    queryFn: () => getNextDaysData({ i: clickDate, deviceType }),
   });
 
   return (
