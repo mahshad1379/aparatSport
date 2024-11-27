@@ -18,14 +18,18 @@ ${FlexRow}
   align-items: center;
   justify-content: space-between;
 
-    @media (max-width: 361px) {
+    @media (max-width: 431px) {
     margin: 5px 5px 0px 5px;
 `;
 
 export const LeftPart = styled.div`
   ${FlexRow}
-  align-items: center;
-  gap: 32px;
+  gap: 14px;
+  align-items:center;
+
+  @media (max-width: 431px) {
+    align-items: unset;
+  }
 `;
 
 export const Profile = styled.div`
@@ -35,8 +39,10 @@ export const Profile = styled.div`
   border-radius: 8px;
   border: 1px solid #78c248;
   background: none;
+  height: 100%;
 
-  @media (max-width: 361px) {
+
+  @media (max-width: 431px) {
     padding: 8px 16px 8px 16px;
   }
 `;
@@ -47,12 +53,12 @@ export const ProfileText = styled.span`
   color: #78c248;
 `;
 
-export const Menu = styled.div`
+export const HeaderMenu = styled.div`
   ${FlexRow}
   gap: 32px;
   align-items: center;
 
-  @media (max-width: 361px) {
+  @media (max-width: 431px) {
     display: none;
   }
 `;
@@ -66,6 +72,9 @@ export const MenuItem = styled.div`
     color: #ffffff;
     text-decoration: none;
   }
+  @media (max-width: 431px) {
+    display: none;
+  }
 `;
 
 export const MenuFrame3 = styled.div`
@@ -73,7 +82,7 @@ export const MenuFrame3 = styled.div`
   gap: 2px;
   align-items: center;
 
-  @media (max-width: 361px) {
+  @media (max-width: 431px) {
     display: none;
   }
 `;
@@ -81,6 +90,17 @@ export const MenuFrame3 = styled.div`
 export const MenuFrame3Text = styled.div`
   font: 700 12px "yekanBakh";
   line-height: 16px;
-  text-align: left;
   color: #78c248;
+
+  @media (max-width: 431px) {
+    display: none;
+  }
+`;
+
+export const Hamberger = styled.div`
+  // display: none;
+  
+  @media (max-width: 431px) {
+    display: block;
+  }
 `;
