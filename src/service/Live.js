@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const getLiveData = async ({deviceType , id}) => {
+const getLiveData = async ({deviceType , uuid}) => {
   console.log('res')
 
   try {
     const res = await axios.get(
-      `https://www.aparatsport.com/api/fa/v1/sport/sport/get_match_with_uuid?uuid=${id}`
+      `https://www.aparatsport.com/api/fa/v1/sport/sport/get_match_with_uuid?uuid=${uuid}&device_type=${deviceType}`
     );
     return res.data;
   } catch (error) {
@@ -13,12 +13,10 @@ const getLiveData = async ({deviceType , id}) => {
   }
 };
 
-const getTodayMatchData = async ({deviceType , id}) => {
-  console.log("id in today match", id)
-
+const getTodayMatchData = async ({deviceType , uuid}) => {
     try {
       const res = await axios.get(
-        `https://www.aparatsport.com/api/fa/v1/sport/sport/get_today_match_data?uuid=${id}`
+        `https://www.aparatsport.com/api/fa/v1/sport/sport/get_today_match_data?uuid=${uuid}&device_type=${deviceType}`
       );
       return res.data;
     } catch (error) {

@@ -16,8 +16,8 @@ import {
   ShareIcon,
   Title,
   Result,
+  ResultText,
   Tags,
-  LivePlayWarningText,
   WarningText,
 } from "./style";
 import Tag from "../../components/Tag/index";
@@ -37,7 +37,8 @@ const TopPart = ({ data }) => {
                 <Timer time={data.platform_data.match_start_date} />
                 {data.live_status == "end_with_result" && (
                   <Result>
-                    {data.result_team2}:{data.result_team1}
+                    <ResultText>نتیجه :</ResultText>
+                    {data.result_team2}-{data.result_team1}
                   </Result>
                 )}
               </LivePlayTimer>
@@ -64,18 +65,18 @@ const TopPart = ({ data }) => {
             </Tags>
           </ContentDetail>
         </LivePlayContent>
-        <LivePlayWarning>
-          <Icon
-            name={"warning"}
-            width="11"
-            height="10"
-            viewBox="0 0 11 10"
-            fill="none"
-          />
-          <WarningText>
-            ترافیک مصرفی شما در ایرانسل به صورت تمام‌بها محاسبه می‌شود.
-          </WarningText>
-        </LivePlayWarning>
+        {data.extra_alert && (
+          <LivePlayWarning>
+            <Icon
+              name={"warning"}
+              width="11"
+              height="10"
+              viewBox="0 0 11 10"
+              fill="none"
+            />
+            <WarningText>{data.extra_alert.text}</WarningText>
+          </LivePlayWarning>
+        )}
       </LivePlayContainer>
     </MainContainer>
   );

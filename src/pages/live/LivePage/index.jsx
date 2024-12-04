@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
 import { getLiveData, getTodayMatchData } from "../../../service/Live.js";
@@ -10,27 +10,23 @@ import { useParams } from "react-router-dom";
 
 const LivePage = () => {
   const deviceType = useResponsiveForm();
-  const { id } = useParams();
-  
-  console.log("id in params", id)
-  
+  const { uuid } = useParams();
+
   const { data: liveData } = useQuery({
     queryKey: ["live_test"],
-    queryFn: () => getLiveData({deviceType , id}),
+    queryFn: () => getLiveData({deviceType , uuid}),
 
   });
   
   const { data: todayMatch } = useQuery({
     queryKey: [`today_match_test`],
-    queryFn: () => getTodayMatchData({deviceType , id}),
+    queryFn: () => getTodayMatchData({deviceType , uuid}),
   });
 
   return (
     <Style>
-      {console.log("data in todayMatch",todayMatch )
-      }
-      {/* <LivePlay data = {liveData}/>
-      <TopPart data = {liveData}/> */}
+      <LivePlay data = {liveData}/>
+      <TopPart data = {liveData}/>
       <AheadPart data={todayMatch} />
     </Style>
   );

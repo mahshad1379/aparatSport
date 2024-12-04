@@ -12,7 +12,7 @@ const PAGE_DATA = [
     element: <DownloadPage/>,
   },
   {
-    path: "/livePage/:id",
+    path: "/livePage/:uuid",
     element: <LivePage/>
   },
 ];

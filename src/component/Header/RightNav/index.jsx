@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import {
   RightNavStyle,
   HeaderMenu,
@@ -28,9 +30,7 @@ const RightNav = () => {
                 viewBox="0 0 16 16"
                 fill="none"
               />
-              {/* <Link className="menuItem_link" to={`/LivePage/${data.match_id}`}>
-                پخش زنده
-              </Link> */}
+            <HashLink smooth to="/HomePage">Live play</HashLink>
             </MenuFrame3Text>
           </MenuFrame3>
           <MenuItem>

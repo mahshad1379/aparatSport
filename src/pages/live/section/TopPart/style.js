@@ -42,11 +42,14 @@ export const LivePlayTimer = styled.div`
   ${FlexRow}
 `;
 export const Result = styled.div`
+  ${FlexRow}
+  gap:5px;
   font: 700 14px "yekanBakh";
   line-height: 16px;
   text-align: right;
   color: #e7e9f2;
 `;
+export const ResultText = styled.div``;
 export const RightContent = styled.div``;
 export const Title = styled.div`
   font: 700 20px "yekanBakh";

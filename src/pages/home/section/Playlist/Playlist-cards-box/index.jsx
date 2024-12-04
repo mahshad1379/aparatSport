@@ -31,6 +31,8 @@ const Playlist = ({ data, setClickDate }) => {
           <PlaylistCardContainer>
             {data?.map((f) => (
               <PostCard
+                key={f.id}
+                uuid={f.uuid}
                 title={f.title}
                 Img={f.thumb_website}
                 reporter={f.reporter_name}

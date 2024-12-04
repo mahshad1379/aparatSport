@@ -15,15 +15,12 @@ const TodayPlaylist = ({ data }) => {
         <MainContainer>
           <SectionContainer>
             <CardTitle>{d.title}</CardTitle>
-            <CardBoxContainer>
+            <CardBoxContainer id="Live">
               {d?.match_detail?.map((f) => (
-                
                <>
-               {console.log("idf:",f.id)}
                 <PostCard
-                // id
                   key={f.id}
-                  id={f?.id}
+                  uuid={f?.uuid}
                   title={f.title}
                   Img={f.thumb_website}
                   reporter={f.reporter_name}
