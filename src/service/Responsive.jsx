@@ -12,7 +12,7 @@ const useResponsiveForm = () => {
     if (isMobile) deviceType = "mobile_view";
     setDeviceType(deviceType);
   }, [isMobile, isDesktop]);
-
+console.log('deviceType ----', deviceType)
   return deviceType;
 };
 

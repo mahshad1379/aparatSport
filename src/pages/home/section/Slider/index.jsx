@@ -8,10 +8,10 @@ import {
   SliderBox,
   TimerBox,
   InfoBox,
-} from "./stayle";
+} from "./style";
 import Icon from "../../../../Icon";
 import { MainContainer } from "../../../../config/globalStyle";
-import Timer from "./Timer";
+import Timer from "../../../../component/Timer";
 import ImageInfo from "./Info";
 
 const SliderPart = ({ data }) => {
@@ -87,7 +87,7 @@ const SliderPart = ({ data }) => {
           {data?.slider?.map((item) => (
             <SliderBox>
               <TimerBox>
-                <Timer time={item.start_time} />
+                <Timer time={item.start_time} isLive={false}/>
               </TimerBox>
               <ImgContainer src={item.thumb_website} />
               <InfoBox>

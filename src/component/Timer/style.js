@@ -1,14 +1,21 @@
 import { styled } from "styled-components";
-import { FlexCol, FlexRow } from "../../../../../config/globalStyle";
+import { FlexCol, FlexRow } from "../../config/globalStyle";
 
 export const TimerContainer = styled.div`
   ${FlexRow}
   gap: 4px;
 `;
 
+export const TimerText = styled.div`
+  font: 700 14px "yekanBakh";
+  line-height: 16px;
+  text-align: right;
+  color: #e7e9f2;
+`;
+
 export const TimeBox = styled.div`
   ${FlexCol}
-  
+
   width: 40px;
   height: 40px;
   padding: 6px;

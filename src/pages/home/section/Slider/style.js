@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const SliderContainer = styled.div`
   padding-top: 80px;
+  // max-height: 300px;
 
   @media (max-width: 741px) {
     padding-top: 50px;

@@ -1,5 +1,6 @@
 import DownloadPage from "../pages/download/DownloadPage";
 import HomePage from "../pages/home/HomePage";
+import LivePage from "../pages/live/LivePage";
 
 const PAGE_DATA = [
   {
@@ -9,6 +10,10 @@ const PAGE_DATA = [
   {
     path: "/DownloadPage",
     element: <DownloadPage/>,
+  },
+  {
+    path: "/livePage/:id",
+    element: <LivePage/>
   },
 ];
 

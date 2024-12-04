@@ -1,9 +1,10 @@
-import React from "react";
-import { Time, TimeBox, TimerContainer, TimeText } from "./style";
+import React, { useState } from "react";
+import { Time, TimeBox, TimerContainer, TimerText, TimeText } from "./style";
 import moment from "moment/moment";
 import PN from "persian-number";
 
-const Timer = ({ time }) => {
+const Timer = ({ time , isLive=true}) => {
+  const [isTime, setIsTime] = useState(false);
   const gameTime = String(time).split(" ")[1];
   const currentTime =
     new Date().getHours() +
@@ -24,11 +25,13 @@ const Timer = ({ time }) => {
   const seconds = time1.diff(time2, "seconds");
   time2.add(seconds, "seconds");
 
+  if (hours > 0 && minutes > 0 && seconds > 0 && time) setIsTime(true);
 
   return (
     <>
-      {(hours<0 || minutes<0 || seconds<0 || time) ? (
+      {isTime ? (
         <TimerContainer>
+          {isLive && <TimerText>مانده تا شروع</TimerText>}
           <TimeBox>
             <Time>{PN.convertEnToPe(hours)}</Time>
             <TimeText>ساعت</TimeText>

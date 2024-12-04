@@ -13,9 +13,6 @@ export const RightNavStyle = styled.div`
 export const HeaderMenu = styled.div`
   @media (max-width: 431px) {
     display: ${(props) => (props.open ? "block" : "none")};
-    // &:active{
-    //     transition: all 0.2s ease-out;
-    // }
     position: relative;
   }
 `;
@@ -24,13 +21,10 @@ export const BurgerMenu = styled.div`
   gap: 32px;
   align-items: center;
   @media (max-width: 431px) {
-  //  &:active{
-  //       transition: all 0.2s ease-out;
-  //   }
     position: absolute;
     top: 26px;
     ${FlexCol}
-    background-color: black;
+    background-color: #000000;
     opacity: 70%;
     padding: 15px;
     width: max-content;
@@ -58,8 +52,14 @@ export const MenuFrame3 = styled.div`
 `;
 
 export const MenuFrame3Text = styled.div`
-  font: 700 12px "yekanBakh";
-  line-height: 16px;
-  text-align: left;
-  color: #78c248;
+  ${FlexRow}
+  gap:3px;
+  align-items: center;
+  > .menuItem_link {
+    font: 700 12px "yekanBakh";
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexRow, DisplayFlex } from "../../config/globalStyle";
+import { FlexCol, FlexRow, DisplayFlex } from "../../config/globalStyle";
 
 export const FooterContainer = styled.div`
 ${FlexRow}
@@ -8,7 +8,7 @@ ${FlexRow}
 `;
 
 export const Container = styled.div`
-${DisplayFlex}
+${FlexRow}
   padding: 7px 152px 7px 152px;
   border: 1px;
   justify-content: space-between;
@@ -16,7 +16,7 @@ ${DisplayFlex}
   border-top: 1px solid #282a37;
 
   @media (max-width: 741px) {
-    display: none;
+    ${FlexCol}
   }
 `;
 

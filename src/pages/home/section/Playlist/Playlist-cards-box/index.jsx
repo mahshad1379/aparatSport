@@ -5,8 +5,8 @@ import {
   PlaylistContentContainer,
   PlaylistCardContainer,
   PlaylistTitle,
-} from "./stayle";
-import PostCard from "../../../components/Post-card";
+} from "./style";
+import PostCard from "../../../../../component/Post-card";
 import Calender from "../Calender";
 import DATE from "../../../../../constant/date";
 import { MainContainer } from "../../../../../config/globalStyle";

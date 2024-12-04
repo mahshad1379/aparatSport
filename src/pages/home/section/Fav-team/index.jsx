@@ -1,5 +1,5 @@
 import React from "react";
-import { FavTeamBoxContainer, FavTeamContainer, FavTeamTitle } from "./stayle";
+import { FavTeamBoxContainer, FavTeamContainer, FavTeamTitle } from "./style";
 import FavTeamCard from "../../components/Fav-team-card";
 import { MainContainer } from "../../../../config/globalStyle";
 

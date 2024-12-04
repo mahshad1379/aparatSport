@@ -20,14 +20,18 @@ const RightNav = () => {
       <HeaderMenu open={isOpen}>
         <BurgerMenu>
           <MenuFrame3>
-            <MenuFrame3Text>پخش زنده</MenuFrame3Text>
-            <Icon
-              name={"green_circle"}
-              width="16px"
-              height="16px"
-              viewBox="0 0 16 16"
-              fill="none"
-            />
+            <MenuFrame3Text>
+              <Icon
+                name={"green_circle"}
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                fill="none"
+              />
+              {/* <Link className="menuItem_link" to={`/LivePage/${data.match_id}`}>
+                پخش زنده
+              </Link> */}
+            </MenuFrame3Text>
           </MenuFrame3>
           <MenuItem>
             <Link className="menuItem_link" to="/">

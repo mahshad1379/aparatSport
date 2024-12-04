@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FlexRow, FontDetail, FlexCol } from "../../../../config/globalStyle";
+import { FlexRow, FontDetail, FlexCol } from "../../config/globalStyle";
 
 export const CardBox = styled.div`
   background: #1b1c26;

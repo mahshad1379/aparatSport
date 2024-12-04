@@ -1,5 +1,5 @@
 import React from "react";
-import { TeamContainer, TeamLogo, TeamName } from "./stayle";
+import { TeamContainer, TeamLogo, TeamName } from "./style";
 
 const FavTeamCard = ({ img, title }) => {
   return (
