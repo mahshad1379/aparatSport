@@ -1,5 +1,5 @@
 import React from "react";
-import SLIDE_ITEM from "../../../../constant/slideshowItem";
+import SLIDE_ITEM from "../../../../../../constant/slideshowItem.js";
 import { SlideshowStyle, Img } from "./styles.js";
 import Slider from "react-infinite-logo-slider";
 

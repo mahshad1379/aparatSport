@@ -1,6 +1,6 @@
 import React from "react";
 import { RateBoxStyle, RateBoxPoint, RateBoxPointText } from "./styles.js";
-import Icon from "../../../../Icon/index.jsx";
+import Icon from "../../../../../../Icon/index.jsx";
 
 const RateBox = ({ logo, point }) => {
   return (

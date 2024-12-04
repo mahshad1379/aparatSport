@@ -3,7 +3,7 @@ import {
   FavSportBoxContainer,
   FavSportContainer,
   FavSportTitle,
-} from "./stayle";
+} from "./style";
 import FavSportTeam from "../../components/Fav-sport-card";
 import { MainContainer } from "../../../../config/globalStyle";
 

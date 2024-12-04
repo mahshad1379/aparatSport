@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {FlexRow , FlexCol, PosAbsolute} from "../../config/globalStyle"
+import {FlexRow , FlexCol, PosAbsolute} from "../../../../config/globalStyle"
 
 
 export const CommentStyle = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PosAbsolute } from "../../../../config/globalStyle";
+import { PosAbsolute } from "../../../../../../config/globalStyle";
 
 export const MainImage = styled.img`
 ${PosAbsolute}

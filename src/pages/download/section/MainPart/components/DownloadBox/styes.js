@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex, FlexRow } from "../../../../config/globalStyle";
+import { DisplayFlex, FlexRow } from "../../../../../../config/globalStyle";
 
 export const DownloadBoxContent = styled.div`
 ${FlexRow}

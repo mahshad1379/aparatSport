@@ -1,5 +1,5 @@
 import React from "react";
-import { CalenderBox, CalenderDate } from "./stayle";
+import { CalenderBox, CalenderDate } from "./style";
 
 const Calender = ({ day, onClick }) => {
   return (

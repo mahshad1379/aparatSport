@@ -4,7 +4,7 @@ import {
   FlexCol,
   PosRelative,
   PosAbsolute,
-} from "../../config/globalStyle";
+} from "../../../../config/globalStyle";
 
 export const Container = styled.div`
   width: 100%;

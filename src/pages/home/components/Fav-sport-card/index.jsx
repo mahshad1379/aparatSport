@@ -1,5 +1,5 @@
 import React from "react";
-import { SportContainer, SportImage, SportName } from "./stayle";
+import { SportContainer, SportImage, SportName } from "./style";
 
 const FavSportTeam = ({ img, title }) => {
   return (

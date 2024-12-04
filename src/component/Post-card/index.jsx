@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   CardBox,
   CardContentBox,
@@ -8,12 +9,13 @@ import {
   CardReporter,
   CardTime,
   TimeText,
-} from "./stayle";
-import Icon from "../../../../Icon/index";
+} from "./style";
+import Icon from "../../Icon/index";
 
-const PostCard = ({ Img, title, reporter, time }) => {
+const PostCard = ({ Img, title, reporter, time , uuid }) => {
   return (
     <CardBox>
+      <Link to={`/LivePage/${uuid}`}>
       <CardImageContainer src={Img} />
       <CardContentBox>
         <CardContentTitle>{title}</CardContentTitle>
@@ -32,6 +34,7 @@ const PostCard = ({ Img, title, reporter, time }) => {
           </CardTime>
         </CardDetails>
       </CardContentBox>
+      </Link>
     </CardBox>
   );
 };

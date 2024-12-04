@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexCol } from "../../../../config/globalStyle";
+import { FlexCol } from "../../../../../../config/globalStyle";
 
 export const DownloadBoxStyle = styled.div`
 ${FlexCol}

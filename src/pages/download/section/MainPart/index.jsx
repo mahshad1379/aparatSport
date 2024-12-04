@@ -2,7 +2,7 @@ import React from "react";
 import { MainPartStyle, Img } from "./style.js";
 import Slideshow from "./components/Slideshow";
 import Content from "./components/Content";
-import { MainContainer } from "../../config/globalStyle.js";
+import { MainContainer } from "../../../../config/globalStyle.js";
 
 const MainPart = () => {
   return (

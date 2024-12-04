@@ -2,8 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ImgContainer, SliderContainer } from "./stayle";
+import {
+  ImgContainer,
+  SliderContainer,
+  SliderBox,
+  TimerBox,
+  InfoBox,
+} from "./style";
 import Icon from "../../../../Icon";
+import { MainContainer } from "../../../../config/globalStyle";
+import Timer from "../../../../component/Timer";
+import ImageInfo from "./Info";
 
 const SliderPart = ({ data }) => {
   const PreArrow = (props) => {
@@ -72,13 +81,23 @@ const SliderPart = ({ data }) => {
   };
 
   return (
-    <SliderContainer>
-      <Slider {...settings}>
-        {data?.slider?.map((item) => (
-          <ImgContainer src={item.thumb_website} />
-        ))}
-      </Slider>
-    </SliderContainer>
+    <MainContainer>
+      <SliderContainer>
+        <Slider {...settings}>
+          {data?.slider?.map((item) => (
+            <SliderBox>
+              <TimerBox>
+                <Timer time={item.start_time} isLive={false}/>
+              </TimerBox>
+              <ImgContainer src={item.thumb_website} />
+              <InfoBox>
+                <ImageInfo title={item.title} time={item.start_time} />
+              </InfoBox>
+            </SliderBox>
+          ))}
+        </Slider>
+      </SliderContainer>
+    </MainContainer>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DownloadBox from "../DownloadBox";
-import DOWNLOAD_ITEM from "../../../../constant/downloadItem";
+import DOWNLOAD_ITEM from "../../../../../../constant/downloadItem.js";
 import {
   Container,
   ContentContainer,
@@ -18,7 +18,7 @@ import {
   DownloadBoxTitleLogo,
   DownloadBoxTitleText,
 } from "../DownloadBox/styes.js";
-import Icon from "../../../../Icon/index.jsx";
+import Icon from "../../../../../../Icon/index.jsx";
 
 const Content = () => {
   const [openKey, setOpenKey] = useState(0);

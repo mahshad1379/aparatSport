@@ -5,7 +5,7 @@ import {
   QuestionBoxDownSide,
   QuestionBoxDownSideText,
 } from "./styles.js";
-import Icon from "../../../../Icon/index.jsx";
+import Icon from "../../../../../../Icon/index.jsx";
 
 const QuestionBoxItem = ({ answer, question , index, openKey, handleOpenAccordion }) => {
 

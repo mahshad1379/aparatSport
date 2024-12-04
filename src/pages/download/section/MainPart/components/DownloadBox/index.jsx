@@ -7,7 +7,7 @@ import {
   DownloadBoxTitleText,
 } from "./styes.js";
 import DownloadButton from "../DownloadButton/index.jsx";
-import Icon from "../../../../Icon/index.jsx";
+import Icon from "../../../../../../Icon/index.jsx";
 
 const DownloadBox = ({ item, index, openKey, handleOpenAccordion}) => {
   return (

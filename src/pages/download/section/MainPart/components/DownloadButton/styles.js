@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../../../config/globalStyle";
+import { DisplayFlex } from "../../../../../../config/globalStyle.js";
 
 export const ButtonContainer = styled.div`
 ${DisplayFlex}

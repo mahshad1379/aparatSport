@@ -5,7 +5,7 @@ import {
   DisplayFlex,
   PosRelative,
   PosAbsolute,
-} from "../../config/globalStyle";
+} from "../../../../config/globalStyle";
 
 export const OptionBoxStyle = styled.div`
   ${DisplayFlex}
