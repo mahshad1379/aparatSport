@@ -9,7 +9,6 @@ import {
 import Icon from "../../Icon/index";
 import { MainContainer } from "../../config/globalStyle";
 import RightNav from "./RightNav";
-import Burger from "./Burger";
 
 const Header = () => {
   const [color, setColor] = useState(false);

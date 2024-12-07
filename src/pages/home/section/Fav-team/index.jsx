@@ -6,7 +6,7 @@ import { MainContainer } from "../../../../config/globalStyle";
 const FavTeam = ({ data }) => {
   return (
     <MainContainer>
-      <FavTeamContainer>
+      <FavTeamContainer id="team">
         <FavTeamTitle>تیم های محبوب</FavTeamTitle>
         <FavTeamBoxContainer>
           {data?.top_team?.map((fav) => (
