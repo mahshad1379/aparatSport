@@ -30,7 +30,7 @@ const RightNav = () => {
                 viewBox="0 0 16 16"
                 fill="none"
               />
-            <HashLink smooth to="/HomePage">Live play</HashLink>
+            <HashLink className="menuItem_link" to="/#برنامه پخش امروز">پخش زنده</HashLink>
             </MenuFrame3Text>
           </MenuFrame3>
           <MenuItem>

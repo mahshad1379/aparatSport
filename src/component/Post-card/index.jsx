@@ -12,9 +12,9 @@ import {
 } from "./style";
 import Icon from "../../Icon/index";
 
-const PostCard = ({ Img, title, reporter, time , uuid }) => {
+const PostCard = ({ Img, title, reporter, time , uuid}) => {
   return (
-    <CardBox>
+    <CardBox >
       <Link to={`/LivePage/${uuid}`}>
       <CardImageContainer src={Img} />
       <CardContentBox>
