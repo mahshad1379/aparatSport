@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Time, TimeBox, TimerContainer, TimerText, TimeText } from "./style";
 import moment from "moment/moment";
-import PN from "persian-number";
+import convertEnToPe from "../../utils/convertEnToPe";
+import { Time, TimeBox, TimerContainer, TimerText, TimeText } from "./style";
 
 const Timer = ({ time, isLive = true }) => {
   const [isTime, setIsTime] = useState(false);
@@ -32,15 +32,15 @@ const Timer = ({ time, isLive = true }) => {
         <TimerContainer>
           {isLive && <TimerText>مانده تا شروع</TimerText>}
           <TimeBox>
-            <Time>{PN.convertEnToPe(hours)}</Time>
+            <Time>{convertEnToPe(hours)}</Time>
             <TimeText>ساعت</TimeText>
           </TimeBox>
           <TimeBox>
-            <Time>{PN.convertEnToPe(minutes)}</Time>
+            <Time>{convertEnToPe(minutes)}</Time>
             <TimeText>دقیقه</TimeText>
           </TimeBox>
           <TimeBox>
-            <Time>{PN.convertEnToPe(seconds)}</Time>
+            <Time>{convertEnToPe(seconds)}</Time>
             <TimeText>ثانیه</TimeText>
           </TimeBox>
         </TimerContainer>
