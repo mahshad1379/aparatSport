@@ -2,14 +2,15 @@ import React , {useEffect} from "react";
 import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
 import { getLiveData, getTodayMatchData } from "../../../service/Live.js";
-import useResponsiveForm from "../../../service/Responsive.jsx";
 import TopPart from "../section/TopPart/index.jsx";
 import LivePlay from "../section/LivePlay/index.jsx";
 import AheadPart from "../section/AheadPart/index.jsx";
 import { useParams } from "react-router-dom";
+import useDeviceType from "../../../hooks/useDeviceType";
 
 const LivePage = () => {
-  const deviceType = useResponsiveForm();
+  const deviceType = useDeviceType();
+
   const { uuid } = useParams();
 
   const { data: liveData } = useQuery({

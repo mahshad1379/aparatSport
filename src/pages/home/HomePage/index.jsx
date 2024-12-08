@@ -7,19 +7,13 @@ import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
 import { getHomeData, getNextDaysData } from "../../../service/Home.js";
 import SliderPart from "../section/Slider/index.jsx";
-import useResponsiveForm from "../../../service/Responsive.jsx";
+import useDeviceType from "../../../hooks/useDeviceType.jsx";
 
 const HomePage = () => {
   const [clickDate, setClickDate] = useState(0);
-  const [deviceType, setDeviceType] = useState('');
-  const device = useResponsiveForm();
+  const deviceType = useDeviceType();
 
-  // useEffect(() => {
-  //   if (device) setDeviceType(device);
-  // },[device])
-// console.log('deviceType', deviceType)
-
-  const { data } = useQuery({
+  const { data, refetch } = useQuery({
     queryKey: ["match_test"],
     queryFn: () => getHomeData({ deviceType }),
   });
@@ -28,6 +22,13 @@ const HomePage = () => {
     queryKey: [`date_${clickDate}`],
     queryFn: () => getNextDaysData({ i: clickDate, deviceType }),
   });
+
+  useEffect(() => {
+    if (deviceType) {
+      refetch();
+      nextDayRefetch();
+    }
+  },[deviceType])
 
   return (
     <Style>
