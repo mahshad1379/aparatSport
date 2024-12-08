@@ -11,6 +11,6 @@ export default (input) => {
         '8': '۸',
         '9': '۹'
     };
-
-    return input.replace(/\d/g, (digit) => englishToPersian[digit] || digit);
+    const safeInput = typeof input === "number" ? input.toString() : input || "";
+    return safeInput?.replace(/\d/g, (digit) => englishToPersian[digit] || digit);
 }
