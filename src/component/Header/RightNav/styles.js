@@ -55,11 +55,11 @@ export const MenuFrame3Text = styled.div`
   ${FlexRow}
   gap:3px;
   align-items: center;
-  > .menuItem_link {
+  > .MenuFrame3Text {
     font: 700 12px "yekanBakh";
     line-height: 16px;
     text-align: center;
-    color: #ffffff;
+    color: #78C249;
     text-decoration: none;
   }
 `;

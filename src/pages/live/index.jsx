@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
-import { getLiveData, getTodayMatchData } from "../../../service/Live.js";
-import TopPart from "../section/TopPart/index.jsx";
-import LivePlay from "../section/LivePlay/index.jsx";
-import AheadPart from "../section/AheadPart/index.jsx";
+import { getLiveData, getTodayMatchData } from "../../service/Live.js";
+import TopPart from "./section/TopPart/index.jsx";
+import LivePlay from "./section/LivePlay/index.jsx";
+import AheadPart from "./section/AheadPart/index.jsx";
 import { useParams } from "react-router-dom";
-import useDeviceType from "../../../hooks/useDeviceType";
+import useDeviceType from "../../hooks/useDeviceType.jsx";
 
-const LivePage = () => {
+const Live = () => {
   const deviceType = useDeviceType();
   const { uuid } = useParams();
 
@@ -23,11 +23,11 @@ const LivePage = () => {
   });
 
   useEffect(() => {
-    if (deviceType) {
+    if (deviceType && uuid) {
       refetch();
       todaymatchRefetch();
     }
-  }, [deviceType]);
+  }, [deviceType, uuid]);
 
   return (
     <Style>
@@ -38,4 +38,4 @@ const LivePage = () => {
   );
 };
 
-export default LivePage;
+export default Live;

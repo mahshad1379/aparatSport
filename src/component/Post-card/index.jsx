@@ -13,9 +13,10 @@ import {
 import Icon from "../../Icon/index";
 
 const PostCard = ({ Img, title, reporter, time , uuid}) => {
+
   return (
-    <CardBox >
-      <Link to={`/LivePage/${uuid}`}>
+    <CardBox>
+      <Link to={`/Live/${uuid}`}>
       <CardImageContainer src={Img} />
       <CardContentBox>
         <CardContentTitle>{title}</CardContentTitle>

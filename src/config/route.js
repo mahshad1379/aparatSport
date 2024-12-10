@@ -1,19 +1,19 @@
-import DownloadPage from "../pages/download/DownloadPage";
-import HomePage from "../pages/home/HomePage";
-import LivePage from "../pages/live/LivePage";
+import Download from "../pages/download";
+import Home from "../pages/home";
+import Live from "../pages/live";
 
 const PAGE_DATA = [
   {
     path: "/",
-    element: <HomePage/>,
+    element: <Home/>,
   },
   {
-    path: "/DownloadPage",
-    element: <DownloadPage/>,
+    path: "/Download",
+    element: <Download/>,
   },
   {
-    path: "/livePage/:uuid",
-    element: <LivePage/>
+    path: "/live/:uuid",
+    element: <Live/>
   },
 ];
 

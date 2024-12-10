@@ -6,4 +6,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #11121a;
+  scroll-behavior: smooth;
 }

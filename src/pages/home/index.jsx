@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import FavSport from "../section/Fav-sport/index.jsx";
-import FavTeam from "../section/Fav-team/index.jsx";
-import Playlist from "../section/Playlist/Playlist-cards-box/index.jsx";
-import TodayPlaylist from "../section/Today-playlist/index.jsx";
+import FavSport from "./section/Fav-sport/index.jsx";
+import FavTeam from "./section/Fav-team/index.jsx";
+import Playlist from "./section/Playlist/Playlist-cards-box/index.jsx";
+import TodayPlaylist from "./section/Today-playlist/index.jsx";
 import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
-import { getHomeData, getNextDaysData } from "../../../service/Home.js";
-import SliderPart from "../section/Slider/index.jsx";
-import useDeviceType from "../../../hooks/useDeviceType.jsx";
+import { getHomeData, getNextDaysData } from "../../service/Home.js";
+import SliderPart from "./section/Slider/index.jsx";
+import useDeviceType from "../../hooks/useDeviceType.jsx";
 
-const HomePage = () => {
+const Home = () => {
   const [clickDate, setClickDate] = useState(0);
   const deviceType = useDeviceType();
 
@@ -41,4 +41,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

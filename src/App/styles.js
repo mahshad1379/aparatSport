@@ -6,6 +6,7 @@ export const AppStyle = styled.div`
   background: #11121a;
   position: relative;
   z-index: 2;
+  scroll-behavior: smooth;
 `;
 
 
