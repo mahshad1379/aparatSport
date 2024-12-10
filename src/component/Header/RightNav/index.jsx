@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 import {
   RightNavStyle,
@@ -22,21 +22,25 @@ const RightNav = () => {
       <HeaderMenu open={isOpen}>
         <BurgerMenu>
           <MenuFrame3>
-            <MenuFrame3Text>
-              <Icon
+              {document.getElementById("live") && (
+                <MenuFrame3Text>
+                <Icon
                 name={"green_circle"}
                 width="16px"
                 height="16px"
                 viewBox="0 0 16 16"
                 fill="none"
               />
-            <HashLink className="menuItem_link" to="/#برنامه پخش امروز">پخش زنده</HashLink>
-            </MenuFrame3Text>
+                <HashLink className="menuItem_link" smooth to="/#live">
+                  پخش زنده
+                </HashLink>
+                </MenuFrame3Text>
+              )}
           </MenuFrame3>
           <MenuItem>
-            <Link className="menuItem_link" to="/">
+            <HashLink className="menuItem_link" smooth to="/#match">
               برنامه پخش
-            </Link>
+            </HashLink>
           </MenuItem>
           <MenuItem>
             {" "}

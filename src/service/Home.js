@@ -6,7 +6,6 @@ const getHomeData = async ({ deviceType }) => {
     const res = await axios.get(
       `https://www.aparatsport.com/api/fa/v1/sport/sport/get_home_data?device_type=${deviceType}`
     );
-    console.log("res",res)
     return res.data;
   } catch (error) {
     console.log(error);

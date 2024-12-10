@@ -28,7 +28,7 @@ const Timer = ({ time, isLive = true }) => {
   }, [hours, minutes, seconds, time]);
   return (
     <>
-      {isTime ? (
+      {isTime && (
         <TimerContainer>
           {isLive && <TimerText>مانده تا شروع</TimerText>}
           <TimeBox>
@@ -44,8 +44,6 @@ const Timer = ({ time, isLive = true }) => {
             <TimeText>ثانیه</TimeText>
           </TimeBox>
         </TimerContainer>
-      ) : (
-        ""
       )}
     </>
   );

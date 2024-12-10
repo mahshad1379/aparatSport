@@ -41,12 +41,10 @@ const QuestionBoxItem = ({ answer, question , index, openKey, handleOpenAccordio
           )}
         </div>
       </QuestionBoxUpside>
-      {openKey === index ? (
+      {openKey === index && (
         <QuestionBoxDownSide>
           <QuestionBoxDownSideText>{answer}</QuestionBoxDownSideText>
         </QuestionBoxDownSide>
-      ) : (
-        ""
       )}
     </QuestionBoxItemStyle>
   );

@@ -3,7 +3,7 @@ import { DisplayFlex, FlexRow } from "../../config/globalStyle";
 
 export const HeaderStyle = styled.div`
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   border: 1px;
   background: ${(props) =>

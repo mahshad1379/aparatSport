@@ -5,6 +5,7 @@ export const PlaylistContainer = styled.div`
 ${FlexCol}
   gap:20px;
   margin: 0 0 40px 0;
+  scroll-margin-top: 120px
 `;
 
 export const PlaylistContentContainer = styled.div`
