@@ -1,4 +1,4 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Style } from "./style";
 import { useQuery } from "@tanstack/react-query";
 import { getLiveData, getTodayMatchData } from "../../../service/Live.js";
@@ -10,24 +10,29 @@ import useDeviceType from "../../../hooks/useDeviceType";
 
 const LivePage = () => {
   const deviceType = useDeviceType();
-
   const { uuid } = useParams();
 
-  const { data: liveData } = useQuery({
+  const { data: liveData, refetch } = useQuery({
     queryKey: ["live_test"],
-    queryFn: () => getLiveData({deviceType , uuid}),
+    queryFn: () => getLiveData({ deviceType, uuid }),
+  });
 
-  });
-  
-  const { data: todayMatch } = useQuery({
+  const { data: todayMatch, refetch: todaymatchRefetch } = useQuery({
     queryKey: [`today_match_test`],
-    queryFn: () => getTodayMatchData({deviceType , uuid}),
+    queryFn: () => getTodayMatchData({ deviceType, uuid }),
   });
+
+  useEffect(() => {
+    if (deviceType) {
+      refetch();
+      todaymatchRefetch();
+    }
+  }, [deviceType]);
 
   return (
     <Style>
-      <LivePlay data = {liveData}/>
-      <TopPart data = {liveData}/>
+      <LivePlay data={liveData} />
+      <TopPart data={liveData} />
       <AheadPart data={todayMatch} />
     </Style>
   );

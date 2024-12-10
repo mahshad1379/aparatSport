@@ -32,7 +32,7 @@ const Playlist = ({ data, setClickDate }) => {
             {data?.map((f) => (
               <PostCard
                 key={f.id}
-                uuid={f.uuid}
+                uuid={f?.uuid}
                 title={f.title}
                 Img={f.thumb_website}
                 reporter={f.reporter_name}

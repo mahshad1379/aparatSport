@@ -20,6 +20,7 @@ const AheadPart = ({ data }) => {
                 {d?.match_detail?.map((f) => (
                   <PostCard
                     title={f.title}
+                    uuid={f?.uuid}
                     Img={f.thumb_website}
                     reporter={f.reporter_name}
                     time={f.start_time_hour_minute}
