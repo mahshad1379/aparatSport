@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../../../../Icon/index";
 import { FaShareAlt } from "react-icons/fa";
+import Icon from "../../../../Icon/index";
 import Timer from "../../../../component/Timer";
 import {
   ContentDetail,
@@ -35,7 +35,7 @@ const TopPart = ({ data }) => {
             <LeftContent>
               <LivePlayTimer>
                 <Timer time={data.platform_data.match_start_date} />
-                {data.live_status == "end_with_result" && (
+                {data.live_status === "end_with_result" && (
                   <Result>
                     <ResultText>نتیجه :</ResultText>
                     {data.result_team2}-{data.result_team1}

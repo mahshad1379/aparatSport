@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FlexRow, FlexCol, FontDetail } from "../../../../config/globalStyle";
+import { FlexRow, FlexCol } from "../../../../config/globalStyle";
 
 export const SectionContainer = styled.div`
   ${FlexCol}
@@ -12,7 +12,8 @@ export const CardContainer = styled.div``;
 
 export const CardTitle = styled.div`
   font: 500 24px "yekanBakh";
-  ${FontDetail};
+  line-height: 24px;
+  text-align: right;
   color: #ffffff;
 `;
 

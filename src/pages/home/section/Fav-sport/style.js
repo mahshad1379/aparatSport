@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FlexRow, FlexCol, FontDetail } from "../../../../config/globalStyle";
+import { FlexRow, FlexCol } from "../../../../config/globalStyle";
 
 export const FavSportContainer = styled.div`
   ${FlexCol}
@@ -9,7 +9,8 @@ export const FavSportContainer = styled.div`
 
 export const FavSportTitle = styled.div`
   font: 500 24px "yekanBakh";
-  ${FontDetail}
+  line-height: 24px;
+  text-align: right;
   color: #FFFFFF;
 `;
 

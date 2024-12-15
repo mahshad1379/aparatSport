@@ -33,9 +33,3 @@ export const PosRelative = css`
 export const PosAbsolute = css`
   position: absolute;
 `;
-
-export const FontDetail = css`
-  line-height: 24px;
-  letter-spacing: 0.10000000149011612px;
-  text-align: right;
-`;

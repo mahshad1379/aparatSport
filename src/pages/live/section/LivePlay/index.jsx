@@ -10,19 +10,16 @@ const LivePlay = ({ data }) => {
           <LivePlayVideo>
             <video
               id="my-player"
-              class="video-js"
+              style={{ width: "100%", height: "100%" }}
+              src={data?.m3u8}
+              className="video-js"
               controls
               preload="auto"
-              poster="//vjs.zencdn.net/v/oceans.png"
-              data-setup="{}"
-              // width= {1136}
-              // height= {556}
-            >
-              <source src={data?.m3u8} />
-            </video>
+              poster={data?.thumb_website}
+            />
           </LivePlayVideo>
         ) : (
-          <LivePlayImg src={data?.thumb_website}/>
+          <LivePlayImg src={data?.thumb_website} />
         )}
       </LivePlayContainer>
     </MainContainer>

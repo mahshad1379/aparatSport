@@ -12,12 +12,12 @@ const Live = () => {
   const deviceType = useDeviceType();
   const { uuid } = useParams();
 
-  const { data: liveData, refetch } = useQuery({
+  const { data: liveData, refetch, isLoading : isLoadingLive } = useQuery({
     queryKey: ["live_test"],
     queryFn: () => getLiveData({ deviceType, uuid }),
   });
 
-  const { data: todayMatch, refetch: todaymatchRefetch } = useQuery({
+  const { data: todayMatch, refetch: todaymatchRefetch , isLoading: isLoadingTodayMatch } = useQuery({
     queryKey: [`today_match_test`],
     queryFn: () => getTodayMatchData({ deviceType, uuid }),
   });
@@ -28,6 +28,10 @@ const Live = () => {
       todaymatchRefetch();
     }
   }, [deviceType, uuid]);
+
+  if (isLoadingLive && isLoadingTodayMatch) {
+    return <div>Loading...</div>
+  }
 
   return (
     <Style>

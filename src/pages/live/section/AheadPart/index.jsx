@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SectionContainer,
   CardBoxContainer,
   CardContainer,
   CardTitle,
+  ShoMoreButton,
 } from "./style";
 import PostCard from "../../../../component/Post-card";
 import { MainContainer } from "../../../../config/globalStyle";
 
 const AheadPart = ({ data }) => {
+  const [showMore , setShowMore] = useState(false)
   return (
     <MainContainer>
       <CardContainer>
@@ -16,7 +18,7 @@ const AheadPart = ({ data }) => {
           <MainContainer>
             <SectionContainer>
               <CardTitle>{d.title}</CardTitle>
-              <CardBoxContainer>
+              <CardBoxContainer collapsed={!showMore}>
                 {d?.match_detail?.map((f) => (
                   <PostCard
                     title={f.title}
@@ -27,6 +29,10 @@ const AheadPart = ({ data }) => {
                   />
                 ))}
               </CardBoxContainer>
+        {
+          !showMore && <ShoMoreButton onClick={()=>setShowMore(!showMore)}>نمایش بیشتر</ShoMoreButton>
+
+        }
             </SectionContainer>
           </MainContainer>
         ))}

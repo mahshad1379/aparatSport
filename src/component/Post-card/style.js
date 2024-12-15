@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FlexRow, FontDetail, FlexCol } from "../../config/globalStyle";
+import { FlexRow, FlexCol } from "../../config/globalStyle";
 
 export const CardBox = styled.div`
   background: #1b1c26;
@@ -23,7 +23,8 @@ export const CardContentBox = styled.div`
 
 export const CardContentTitle = styled.div`
   font: 500 14px "yekanBakh";
-  ${FontDetail}
+  line-height: 24px;
+  text-align: right;
   color: #F2F2F2;
   padding: 0 13px;
 `;
@@ -36,7 +37,8 @@ export const CardDetails = styled.div`
 
 export const CardReporter = styled.div`
   font: 500 14px "yekanBakh";
-  ${FontDetail}
+  line-height: 24px;
+  text-align: right;
   color: #A4A6BC;
   padding: 0 13px;
 `;

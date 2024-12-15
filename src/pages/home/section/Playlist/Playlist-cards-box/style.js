@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FlexCol, FlexRow, FontDetail } from "../../../../../config/globalStyle";
+import { FlexCol, FlexRow } from "../../../../../config/globalStyle";
 
 export const PlaylistContainer = styled.div`
 ${FlexCol}
@@ -15,7 +15,8 @@ ${FlexCol}
 
 export const PlaylistTitle = styled.div`
   font: 500 24px "yekanBakh";
-  ${FontDetail}
+  line-height: 24px;
+  text-align: right;
   color: #FFFFFF;
 `;
 

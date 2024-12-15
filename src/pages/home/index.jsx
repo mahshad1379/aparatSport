@@ -13,12 +13,13 @@ const Home = () => {
   const [clickDate, setClickDate] = useState(0);
   const deviceType = useDeviceType();
 
-  const { data, refetch } = useQuery({
+  const { data, refetch, isLoading } = useQuery({
+    
     queryKey: ["match_test"],
     queryFn: () => getHomeData({ deviceType }),
   });
 
-  const { data: nextDay, refetch: nextDayRefetch } = useQuery({
+  const { data: nextDay, refetch: nextDayRefetch, isLoading:isLoadingNextDay } = useQuery({
     queryKey: [`date_${clickDate}`],
     queryFn: () => getNextDaysData({ i: clickDate, deviceType }),
   });
@@ -29,6 +30,10 @@ const Home = () => {
       nextDayRefetch();
     }
   },[deviceType])
+
+  if (isLoading && isLoadingNextDay) {
+    return <div>Loading...</div>
+  }
 
   return (
     <Style>
