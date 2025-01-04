@@ -13,6 +13,7 @@ const TodayPlaylist = ({ data }) => {
     <CardContainer>
       {data?.match?.map((d) => (
         <MainContainer>
+          {console.log(data)}
           <SectionContainer id = {`${d.type}`}>
             <CardTitle>{d.title}</CardTitle>
             <CardBoxContainer>

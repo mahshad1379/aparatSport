@@ -46,6 +46,11 @@ const RightNav = () => {
               دانلود اپلیکیشن
             </Link>
           </MenuItem>
+          <MenuItem>
+            <Link className="menuItem_link" to="/explore">
+              ویدیوها
+            </Link>
+          </MenuItem>
         </BurgerMenu>
       </HeaderMenu>
     </RightNavStyle>
