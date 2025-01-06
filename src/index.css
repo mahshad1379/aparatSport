@@ -8,3 +8,7 @@ body {
   background-color: #11121a;
   scroll-behavior: smooth;
 }
+
+.player-dimensions.vjs-fluid:not(.vjs-audio-only-mode), .player-dimensions.vjs-fluid {
+  padding-top: 0 !important;
+}
