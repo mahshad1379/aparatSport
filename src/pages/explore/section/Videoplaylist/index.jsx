@@ -10,13 +10,22 @@ const PlayList = ({ data }) => {
   const [omittedItems, setOmittedItems] = useState([]);
 
   const moveDown = () => {
+
     setHistory((prevHistory) => {
       if (prevHistory.length > 1) {
         const [removedItem, ...remainingHistory] = prevHistory;
-        setOmittedItems((prevOmitted) => [...prevOmitted, removedItem]);
 
-        console.log("item:", removedItem, "omited1", omittedItems);
-
+        if (!removedItem.hasBeenRemoved) {
+          setTimeout(() => {
+            setOmittedItems((prevOmitted) => {
+              const newOmittedItems = [...prevOmitted, removedItem];
+              console.log("Updated omittedItems:", newOmittedItems);
+              return newOmittedItems;
+            });
+          }, 500);
+  
+          removedItem.hasBeenRemoved = true;
+        }
         return remainingHistory;
       }
       return prevHistory;
@@ -86,7 +95,7 @@ const PlayList = ({ data }) => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleKeyDown, handleScroll]);
+  }, []);
 
   useEffect(() => {
     checkIfInViewport();

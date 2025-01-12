@@ -12,25 +12,29 @@ const Live = () => {
   const deviceType = useDeviceType();
   const { uuid } = useParams();
 
-  const { data: liveData, refetch, isLoading : isLoadingLive } = useQuery({
+  const { data: liveData, refetch, isLoading: isLoadingLive } = useQuery({
     queryKey: ["live_test"],
     queryFn: () => getLiveData({ deviceType, uuid }),
   });
 
-  const { data: todayMatch, refetch: todaymatchRefetch , isLoading: isLoadingTodayMatch } = useQuery({
-    queryKey: [`today_match_test`],
+  const { data: todayMatch, refetch: todayMatchRefetch , isLoading: isLoadingTodayMatch } = useQuery({
+    queryKey: ["today_match_test"],
     queryFn: () => getTodayMatchData({ deviceType, uuid }),
   });
 
   useEffect(() => {
     if (deviceType && uuid) {
       refetch();
-      todaymatchRefetch();
+      todayMatchRefetch();
     }
-  }, [deviceType, uuid]);
+  }, [deviceType, uuid, refetch, todayMatchRefetch]);
 
   if (isLoadingLive && isLoadingTodayMatch) {
     return <div>Loading...</div>
+  }
+
+  if (!liveData || !todayMatch) {
+    return <div>No data available.</div>;
   }
 
   return (
