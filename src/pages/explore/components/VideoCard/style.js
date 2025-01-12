@@ -6,6 +6,7 @@ export const CardBox = styled.div`
   border-radius: 8px;
   border: 1px solid #282a37;
   width: min-content;
+  padding: 50px 0;
 `;
 
 export const CardContentBox = styled.div`
