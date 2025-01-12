@@ -22,7 +22,6 @@ const LivePlay = ({ data }) => {
         className="video-js"
         style= 'width: 100%;'
       />`;
-
     videoRef.current = document.getElementById("player");
     if (!videoRef.current) return;
 

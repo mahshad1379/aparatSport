@@ -29,8 +29,8 @@ const Live = () => {
     }
   }, [deviceType, uuid, refetch, todayMatchRefetch]);
 
-  if (isLoadingLive && isLoadingTodayMatch) {
-    return <div>Loading...</div>
+  if (isLoadingLive || isLoadingTodayMatch) {
+    return <div>Loading...</div>;
   }
 
   if (!liveData || !todayMatch) {
