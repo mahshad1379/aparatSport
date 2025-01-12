@@ -8,10 +8,10 @@ import {
 } from "./style";
 import VideoPlayer from "../VideoPlayer";
 
-const VideoCard = ({ video, title, username }) => {
+const VideoCard = ({ video, title, username, forwardedRef }) => {
   return (
     <CardBox>
-      <VideoPlayer videoScr={video} />
+      <VideoPlayer videoScr={video} forwardedRef={forwardedRef} />
       <CardContentBox>
         <CardContentTitle>{title}</CardContentTitle>
         <CardUsername>
